@@ -148,12 +148,15 @@ half4 Toon_Specular(Light mainlight, Varyings input, half specular, half gloss)
     half ldoth = saturate(dot(mainlight.direction, halfDir));
 
 
+    //Unityƒ⁄÷√BRDFº∆À„
     half roughness = 1 - gloss;
     half roughness2 = roughness * roughness;
     half roughness2MinusOne = 1 - roughness * roughness;
+    half normalizationTerm = roughness * 4.0 + 2.0;
+
     float d = ndoth * ndoth * roughness2MinusOne + 1.00001f;
     half LoH2 = ldoth * ldoth;
-    half specularTerm = roughness2 / ((d * d) * max(0.1h, LoH2));
+    half specularTerm = roughness2 / ((d * d) * max(0.1h, LoH2) * normalizationTerm);
 
     return specularTerm * _SpecularColor * specular;
 }
