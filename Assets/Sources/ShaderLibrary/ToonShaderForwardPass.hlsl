@@ -143,13 +143,14 @@ half4 Toon_Face(Light mainlight, half ndotl, half4 albedo, half lightmap, Varyin
 half4 Toon_Specular(Light mainlight, Varyings input, half specular, half gloss)
 {
     //向量准备
-    half3 halfDir = SafeNormalize(mainlight.direction + input.viewDirWS);
+    //half3 rDir = reflect(-mainlight.direction, input.normalWS);
+    //half3 halfDir = SafeNormalize(rDir + input.viewDirWS);
+    half3 halfDir = SafeNormalize(mainlight.direction + normalize(input.viewDirWS));
     half ndoth = saturate(dot(input.normalWS, halfDir));
     half ldoth = saturate(dot(mainlight.direction, halfDir));
 
-
-    //Unity内置BRDF计算
-    half roughness = 1 - gloss;
+    //Unity内置BRDF高光计算
+    half roughness = 1 - gloss * _Gloss;
     half roughness2 = roughness * roughness;
     half roughness2MinusOne = 1 - roughness * roughness;
     half normalizationTerm = roughness * 4.0 + 2.0;
@@ -158,8 +159,12 @@ half4 Toon_Specular(Light mainlight, Varyings input, half specular, half gloss)
     half LoH2 = ldoth * ldoth;
     half specularTerm = roughness2 / ((d * d) * max(0.1h, LoH2) * normalizationTerm);
 
-    return specularTerm * _SpecularColor * specular;
+    //BlinnPhong计算
+    //half specularTerm = pow(ndoth, gloss * _Gloss);
+    return specularTerm * _SpecularColor * specular * float4(mainlight.color, 1);
 }
+
+
 
 half4 Toon_Anisotropy()
 {
@@ -265,7 +270,7 @@ half4 ToonHairPassFragment(Varyings input) : SV_Target
         half4 specular = 0;
     #else
         half4 diffuse = Toon_Diffuse(mainLight, ndotl, albedo, mask.b);
-        half4 specular = Toon_Specular(mainLight, input, mask.g, mask.a);
+        half4 specular = Toon_Specular(mainLight, input, mask.g, mask.r);
     #endif
 
     
@@ -373,7 +378,7 @@ half4 ToonClothPassFragment(Varyings input) : SV_Target
     half4 mask = SAMPLE_TEXTURE2D(_MaskMap, sampler_MaskMap, input.uv.xy);
 
     half4 diffuse = Toon_Diffuse(mainLight, ndotl, albedo, mask.b);
-    half4 specular = Toon_Specular(mainLight, input, mask.g, mask.a);
+    half4 specular = Toon_Specular(mainLight, input, mask.g, mask.r);
 
     return diffuse + specular;
 

@@ -9,6 +9,7 @@
 TEXTURE2D(_DiffuseMap); SAMPLER(sampler_DiffuseMap);
 half4 _DiffuseColor;
 half4 _SpecularColor;
+half _Gloss;
 
 TEXTURE2D(_MaskMap); SAMPLER(sampler_MaskMap);
 TEXTURE2D(_MetalMap); SAMPLER(sampler_MetalMap);

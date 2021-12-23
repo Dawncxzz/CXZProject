@@ -6,6 +6,7 @@ Shader "Toon/ToonClothShader"
         _DiffuseMap ("_DiffuseMap", 2D) = "white" {}
         _DiffuseColor("_DiffuseColor", Color) = (1,1,1,1)
         [HDR]_SpecularColor("_SpecularColor", Color) = (1,1,1,1)
+        _Gloss("_Gloss", Range(0,1)) = 0
         _MaskMap ("_MaskMap", 2D) = "white" {}
         _MetalMap ("_MetalMap", 2D) = "white" {}
         _RampMap ("_RampMap", 2D) = "white" {}

@@ -14,6 +14,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
         MaterialProperty _DiffuseMap = null;
         MaterialProperty _DiffuseColor = null;
         MaterialProperty _SpecularColor = null;
+        MaterialProperty _Gloss = null;
         MaterialProperty _MaskMap = null;
         MaterialProperty _MetalMap = null;
         MaterialProperty _FaceShadowMap = null;
@@ -49,6 +50,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
             _DiffuseMap = FindProperty("_DiffuseMap", properties);
             _DiffuseColor = FindProperty("_DiffuseColor", properties);
             _SpecularColor = FindProperty("_SpecularColor", properties);
+            _Gloss = FindProperty("_Gloss", properties);
             _MaskMap = FindProperty("_MaskMap", properties);
             _MetalMap = FindProperty("_MetalMap", properties);
             _FaceShadowMap = FindProperty("_FaceShadowMap", properties);
@@ -110,6 +112,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
             materialEditor.ShaderProperty(_SpecularColor, "高光颜色");
             EditorGUILayout.LabelField("遮罩详情:(R:光滑度 G:高光  B:漫反射 A:渐变)");
             materialEditor.TexturePropertySingleLine(new GUIContent("遮罩图"), _MaskMap);
+            materialEditor.ShaderProperty(_Gloss, "光滑度");
             materialEditor.TexturePropertySingleLine(new GUIContent("金属贴图"), _MetalMap);
             materialEditor.TexturePropertySingleLine(new GUIContent("渐变贴图"), _RampMap);
             materialEditor.ShaderProperty(_RampRange, "渐变范围");
