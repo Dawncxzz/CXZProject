@@ -4,11 +4,14 @@ Shader "Toon/ToonClothShader"
     {
         //ToonCloth Propertites
         _DiffuseMap ("_DiffuseMap", 2D) = "white" {}
+        _DiffuseColor("_DiffuseColor", Color) = (1,1,1,1)
+        [HDR]_SpecularColor("_SpecularColor", Color) = (1,1,1,1)
         _MaskMap ("_MaskMap", 2D) = "white" {}
         _MetalMap ("_MetalMap", 2D) = "white" {}
-        _FaceShadowMap ("_FaceShadowMap", 2D) = "white" {}
         _RampMap ("_RampMap", 2D) = "white" {}
         _RampRange ("_RampRange", Range(0, 1)) = 0
+        _ShadowColor ("_ShadowColor", Color) = (1,1,1,1)
+
 
         // Specular vs Metallic workflow
         [HideInInspector] _WorkflowMode("WorkflowMode", Float) = 1.0
@@ -123,6 +126,8 @@ Shader "Toon/ToonClothShader"
             #pragma shader_feature_local_fragment _ENVIRONMENTREFLECTIONS_OFF
             #pragma shader_feature_local_fragment _SPECULAR_SETUP
             #pragma shader_feature_local _RECEIVE_SHADOWS_OFF
+            #pragma shader_feature _SKIN
+
 
             // -------------------------------------
             // Universal Pipeline keywords

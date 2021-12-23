@@ -3,12 +3,17 @@ Shader "Toon/ToonHairShader"
     Properties
     {
         //ToonHair Propertites
-        _DissuseMap ("_DissuseMap", 2D) = "white" {}
+        _DiffuseMap ("_DiffuseMap", 2D) = "white" {}
+        _DiffuseColor("_DiffuseColor", Color) = (1,1,1,1)
+        [HDR]_SpecularColor("_SpecularColor", Color) = (1,1,1,1)
         _MaskMap ("_MaskMap", 2D) = "white" {}
         _MetalMap ("_MetalMap", 2D) = "white" {}
         _FaceShadowMap ("_FaceShadowMap", 2D) = "white" {}
+        _ShadowColor ("_ShadowColor", Color) = (1,1,1,1)
+        _LerpMax ("_LerpMax", Range(0,1)) = 0
         _RampMap ("_RampMap", 2D) = "white" {}
         _RampRange ("_RampRange", Range(0, 1)) = 0
+        
 
         // Specular vs Metallic workflow
         [HideInInspector] _WorkflowMode("WorkflowMode", Float) = 1.0
@@ -123,6 +128,7 @@ Shader "Toon/ToonHairShader"
             #pragma shader_feature_local_fragment _ENVIRONMENTREFLECTIONS_OFF
             #pragma shader_feature_local_fragment _SPECULAR_SETUP
             #pragma shader_feature_local _RECEIVE_SHADOWS_OFF
+            #pragma shader_feature _FACE
 
             // -------------------------------------
             // Universal Pipeline keywords
@@ -141,9 +147,11 @@ Shader "Toon/ToonHairShader"
             #pragma multi_compile _ LIGHTMAP_ON
             #pragma multi_compile_fog
 
+            
+
             #pragma vertex ToonHairPassVertex
             #pragma fragment ToonHairPassFragment
-
+            #define REQUIRES_WORLD_SPACE_TANGENT_INTERPOLATOR
             #include "Assets/Sources/ShaderLibrary/ToonShaderInput.hlsl"
             #include "Assets/Sources/ShaderLibrary/ToonShaderForwardPass.hlsl"
             ENDHLSL
@@ -295,5 +303,5 @@ Shader "Toon/ToonHairShader"
     }
 
     FallBack "Hidden/Universal Render Pipeline/FallbackError"
-    CustomEditor "UnityEditor.Rendering.Universal.ShaderGUI.LitShader"
+    CustomEditor "UnityEditor.Rendering.Universal.ShaderGUI.ToonHairShader"
 }

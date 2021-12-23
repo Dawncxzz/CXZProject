@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace UnityEditor.Rendering.Universal.ShaderGUI
 {
@@ -11,11 +12,13 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
 
         //CXZ
         MaterialProperty _DiffuseMap = null;
+        MaterialProperty _DiffuseColor = null;
+        MaterialProperty _SpecularColor = null;
         MaterialProperty _MaskMap = null;
         MaterialProperty _MetalMap = null;
-        MaterialProperty _FaceShadowMap = null;
         MaterialProperty _RampMap = null;
         MaterialProperty _RampRange = null;
+        MaterialProperty _ShadowColor = null;
 
         public override void OnOpenGUI(Material material, MaterialEditor materialEditor)
         {
@@ -42,11 +45,13 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
             litDetailProperties = new LitDetailGUI.LitProperties(properties);
 
             _DiffuseMap = FindProperty("_DiffuseMap", properties);
+            _DiffuseColor = FindProperty("_DiffuseColor", properties);
+            _SpecularColor = FindProperty("_SpecularColor", properties);
             _MaskMap = FindProperty("_MaskMap", properties);
             _MetalMap = FindProperty("_MetalMap", properties);
-            _FaceShadowMap = FindProperty("_FaceShadowMap", properties);
             _RampMap = FindProperty("_RampMap", properties);
             _RampRange = FindProperty("_RampRange", properties);
+            _ShadowColor = FindProperty("_ShadowColor", properties);
 
         }
 
@@ -87,12 +92,25 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
         {
             //base.DrawSurfaceInputs(material);
             //LitGUI.Inputs(litProperties, materialEditor, material);
-            materialEditor.TexturePropertySingleLine(new GUIContent("Diffuse Map"), _DiffuseMap);
-            materialEditor.TexturePropertySingleLine(new GUIContent("Mask Map"), _MaskMap);
-            materialEditor.TexturePropertySingleLine(new GUIContent("Metal Map"), _MetalMap);
-            materialEditor.TexturePropertySingleLine(new GUIContent("FaceShadow Map"), _FaceShadowMap);
-            materialEditor.TexturePropertySingleLine(new GUIContent("Ramp Map"), _RampMap);
+            bool _SKIN = material.IsKeywordEnabled("_SKIN");
+
+            EditorGUI.BeginChangeCheck();
+            _SKIN = EditorGUILayout.Toggle("皮肤", _SKIN);
+
+            materialEditor.TexturePropertySingleLine(new GUIContent("漫反射贴图"), _DiffuseMap, _DiffuseColor);
+            materialEditor.ShaderProperty(_SpecularColor, "高光颜色");
+            EditorGUILayout.LabelField("遮罩详情:(R:光滑度 G:高光  B:漫反射 A:渐变)");
+            materialEditor.TexturePropertySingleLine(new GUIContent("遮罩图"), _MaskMap);
+            materialEditor.TexturePropertySingleLine(new GUIContent("金属贴图"), _MetalMap);
+            materialEditor.TexturePropertySingleLine(new GUIContent("渐变贴图"), _RampMap);
             materialEditor.ShaderProperty(_RampRange, "渐变范围");
+            materialEditor.ShaderProperty(_ShadowColor, "阴影颜色");
+
+            if(EditorGUI.EndChangeCheck())
+            {
+                CoreUtils.SetKeyword(material, "_SKIN", _SKIN);
+            }
+
             DrawEmissionProperties(material, true);
             DrawTileOffset(materialEditor, baseMapProp);
         }
@@ -133,7 +151,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
                 SetupMaterialBlendMode(material);
                 return;
             }
-
+             
             SurfaceType surfaceType = SurfaceType.Opaque;
             BlendMode blendMode = BlendMode.Alpha;
             if (oldShader.name.Contains("/Transparent/Cutout/"))

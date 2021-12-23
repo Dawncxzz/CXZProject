@@ -7,11 +7,18 @@
 #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/ParallaxMapping.hlsl"
 
 TEXTURE2D(_DiffuseMap); SAMPLER(sampler_DiffuseMap);
+half4 _DiffuseColor;
+half4 _SpecularColor;
+
 TEXTURE2D(_MaskMap); SAMPLER(sampler_MaskMap);
 TEXTURE2D(_MetalMap); SAMPLER(sampler_MetalMap);
 TEXTURE2D(_FaceShadowMap); SAMPLER(sampler_FaceShadowMap);
+half _LerpMax;
 TEXTURE2D(_RampMap); SAMPLER(sampler_RampMap);
-float _RampRange;
+half _RampRange;
+
+half4 _ShadowColor;
+
 
 #if defined(_DETAIL_MULX2) || defined(_DETAIL_SCALED)
 #define _DETAIL

@@ -34,9 +34,9 @@ struct Varyings
 #endif
 
     float3 normalWS                 : TEXCOORD3;
-#if defined(REQUIRES_WORLD_SPACE_TANGENT_INTERPOLATOR)
+//#if defined(REQUIRES_WORLD_SPACE_TANGENT_INTERPOLATOR)
     float4 tangentWS                : TEXCOORD4;    // xyz: tangent, w: sign
-#endif
+//#endif
     float3 viewDirWS                : TEXCOORD5;
 
     half4 fogFactorAndVertexLight   : TEXCOORD6; // x: fogFactor, yzw: vertex light
@@ -95,15 +95,70 @@ void InitializeInputData(Varyings input, half3 normalTS, out InputData inputData
 
 half4 Toon_Diffuse(Light mainlight, float ndotl, float4 albedo, float lightmap)
 {
+
+    //半兰伯特映射
     half halflambert = ndotl * 0.5 + 0.5;
     halflambert *= lightmap;
-    half4 rampColor = SAMPLE_TEXTURE2D(_RampMap, sampler_RampMap, half2(halflambert, _RampRange));
-    //return rampColor;
-    half4 diffuse = rampColor * albedo;
+    half4 rampColor = SAMPLE_TEXTURE2D_LOD(_RampMap, sampler_RampMap, half2(halflambert, _RampRange), 0);
+    
+    //返回
+    half4 diffuse = albedo * _DiffuseColor;
+    #if !_SKIN
+        diffuse *= rampColor;
+    #endif
+    diffuse.rgb *= mainlight.color;
     return diffuse;
 }
 
-half4 Toon_Specular(Light mainlight, float ndotv, float albedo, float gloss)
+half4 Toon_Face(Light mainlight, half ndotl, half4 albedo, half lightmap, Varyings input)
+{
+
+    //向量准备
+    half3 front = mul(UNITY_MATRIX_M, half3(0,0,1));
+    half3 right = mul(UNITY_MATRIX_M, half3(1,0,0));
+    half ldotx = dot(right, mainlight.direction);
+    half ldotZ = dot(front, mainlight.direction);
+    
+    //采样方向判断
+    half rightSample = SAMPLE_TEXTURE2D_LOD(_FaceShadowMap, sampler_FaceShadowMap, half2(1 - input.uv.x, input.uv.y), 0);
+    half leftSample = SAMPLE_TEXTURE2D_LOD(_FaceShadowMap, sampler_FaceShadowMap, half2(input.uv.x, input.uv.y), 0);
+    half rampColor = step(0, ldotx) ? rightSample : leftSample;
+    
+    //阴影判断，通过z向投影和rampColor比较
+    half shadow = step(rampColor.r, ldotZ * 0.5 + 0.5);
+
+    //阴影虚化，将突变转为渐变
+    half soft = step(abs((ldotZ * 0.5 + 0.5) - rampColor.r), _LerpMax);
+    shadow = step(1, soft) ? smoothstep(ldotZ * 0.5 + 0.5 + _LerpMax, ldotZ * 0.5 + 0.5 - _LerpMax, rampColor.r) : shadow;
+    
+    //阴影插值
+    half4 diffuse = albedo * _DiffuseColor;
+    diffuse = lerp(diffuse * _ShadowColor, diffuse, shadow); 
+
+    //返回
+    diffuse.rgb *= mainlight.color;
+    return diffuse;
+}
+
+half4 Toon_Specular(Light mainlight, Varyings input, half specular, half gloss)
+{
+    //向量准备
+    half3 halfDir = SafeNormalize(mainlight.direction + input.viewDirWS);
+    half ndoth = saturate(dot(input.normalWS, halfDir));
+    half ldoth = saturate(dot(mainlight.direction, halfDir));
+
+
+    half roughness = 1 - gloss;
+    half roughness2 = roughness * roughness;
+    half roughness2MinusOne = 1 - roughness * roughness;
+    float d = ndoth * ndoth * roughness2MinusOne + 1.00001f;
+    half LoH2 = ldoth * ldoth;
+    half specularTerm = roughness2 / ((d * d) * max(0.1h, LoH2));
+
+    return specularTerm * _SpecularColor * specular;
+}
+
+half4 Toon_Anisotropy()
 {
     
 }
@@ -184,7 +239,35 @@ half4 ToonHairPassFragment(Varyings input) : SV_Target
 
     InputData inputData;
     InitializeInputData(input, surfaceData.normalTS, inputData);
+    //CXZ Begin
+    #if defined(SHADOWS_SHADOWMASK) && defined(LIGHTMAP_ON)
+        half4 shadowMask = inputData.shadowMask;
+    #elif !defined (LIGHTMAP_ON)
+        half4 shadowMask = unity_ProbesOcclusion;
+    #else
+        half4 shadowMask = half4(1, 1, 1, 1);
+    #endif
+    Light mainLight = GetMainLight(inputData.shadowCoord, inputData.positionWS, shadowMask);
+    //CXZ End
+    //向量准备
+    half ndotl = saturate(dot(inputData.normalWS, mainLight.direction));
 
+    half4 albedo = SAMPLE_TEXTURE2D(_DiffuseMap, sampler_DiffuseMap, input.uv.xy);
+    half metal = SAMPLE_TEXTURE2D(_MetalMap, sampler_MetalMap, input.uv.xy);
+    half faceShadow = SAMPLE_TEXTURE2D(_FaceShadowMap, sampler_FaceShadowMap, input.uv.xy);
+    half4 mask = SAMPLE_TEXTURE2D(_MaskMap, sampler_MaskMap, input.uv.xy);
+
+    #if _FACE
+        half4 diffuse = Toon_Face(mainLight, ndotl, albedo, mask.b, input);
+        half4 specular = 0;
+    #else
+        half4 diffuse = Toon_Diffuse(mainLight, ndotl, albedo, mask.b);
+        half4 specular = Toon_Specular(mainLight, input, mask.g, mask.a);
+    #endif
+
+    
+
+    return diffuse + specular;
     half4 color = UniversalFragmentPBR(inputData, surfaceData);
 
     color.rgb = MixFog(color.rgb, inputData.fogCoord);
@@ -287,9 +370,9 @@ half4 ToonClothPassFragment(Varyings input) : SV_Target
     half4 mask = SAMPLE_TEXTURE2D(_MaskMap, sampler_MaskMap, input.uv.xy);
 
     half4 diffuse = Toon_Diffuse(mainLight, ndotl, albedo, mask.b);
+    half4 specular = Toon_Specular(mainLight, input, mask.g, mask.a);
 
-
-    return diffuse;
+    return diffuse + specular;
 
     
     half4 color = UniversalFragmentPBR(inputData, surfaceData);
