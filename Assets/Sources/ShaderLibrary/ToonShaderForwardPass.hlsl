@@ -21,6 +21,7 @@ struct Attributes
     float4 tangentOS    : TANGENT;
     float2 texcoord     : TEXCOORD0;
     float2 lightmapUV   : TEXCOORD1;
+    float3 color : COLOR0;
     UNITY_VERTEX_INPUT_INSTANCE_ID
 };
 
@@ -53,6 +54,8 @@ struct Varyings
     UNITY_VERTEX_INPUT_INSTANCE_ID
     UNITY_VERTEX_OUTPUT_STEREO
 };
+
+
 
 void InitializeInputData(Varyings input, half3 normalTS, out InputData inputData)
 {
@@ -90,7 +93,7 @@ void InitializeInputData(Varyings input, half3 normalTS, out InputData inputData
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-//                  Vertex and Fragment functions                            //
+//                              Toon functions                               //
 ///////////////////////////////////////////////////////////////////////////////
 
 half4 Toon_Diffuse(Light mainlight, float ndotl, float4 albedo, float lightmap)
@@ -170,6 +173,26 @@ half4 Toon_Anisotropy()
 {
     
 }
+
+half4 Toon_Outline(Attributes input, float4 positionCS)
+{
+    //模型中心坐标偏移
+    //half sign = step(0, dot(input.normalOS, input.positionOS.xyz)) ? 1 : -1;
+    //positionCS = mul(UNITY_MATRIX_MVP, half4(input.positionOS.xyz + sign * input.positionOS.xyz * _OutlineOffset * 0.01, 1));
+    //positionCS.z -= _OutlineBias * 0.001;
+
+    //模型法线偏移
+    positionCS = mul(UNITY_MATRIX_MVP, half4(input.positionOS.xyz + input.normalOS * _OutlineOffset * 0.01 * input.color, 1));
+    positionCS.z -= _OutlineBias * 0.001;
+    return positionCS;
+
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//                  Vertex and Fragment functions                            //
+///////////////////////////////////////////////////////////////////////////////
+
+
 
 // Used in Standard (Physically Based) shader
 Varyings ToonHairPassVertex(Attributes input)
@@ -389,6 +412,68 @@ half4 ToonClothPassFragment(Varyings input) : SV_Target
     color.a = OutputAlpha(color.a, _Surface);
 
     return color;
+}
+
+//法线外扩和中心坐标外扩的顶点着色器
+Varyings OutlinePassVertex(Attributes input)
+{
+    Varyings output = (Varyings)0;
+
+    UNITY_SETUP_INSTANCE_ID(input);
+    UNITY_TRANSFER_INSTANCE_ID(input, output);
+    UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(output);
+
+    VertexPositionInputs vertexInput = GetVertexPositionInputs(input.positionOS.xyz);
+
+    // normalWS and tangentWS already normalize.
+    // this is required to avoid skewing the direction during interpolation
+    // also required for per-vertex lighting and SH evaluation
+    VertexNormalInputs normalInput = GetVertexNormalInputs(input.normalOS, input.tangentOS);
+
+    half3 viewDirWS = GetWorldSpaceViewDir(vertexInput.positionWS);
+    half3 vertexLight = VertexLighting(vertexInput.positionWS, normalInput.normalWS);
+    half fogFactor = ComputeFogFactor(vertexInput.positionCS.z);
+
+    output.uv = TRANSFORM_TEX(input.texcoord, _BaseMap);
+
+    // already normalized from normal transform to WS.
+    output.normalWS = normalInput.normalWS;
+    output.viewDirWS = viewDirWS;
+#if defined(REQUIRES_WORLD_SPACE_TANGENT_INTERPOLATOR) || defined(REQUIRES_TANGENT_SPACE_VIEW_DIR_INTERPOLATOR)
+    real sign = input.tangentOS.w * GetOddNegativeScale();
+    half4 tangentWS = half4(normalInput.tangentWS.xyz, sign);
+#endif
+#if defined(REQUIRES_WORLD_SPACE_TANGENT_INTERPOLATOR)
+    output.tangentWS = tangentWS;
+#endif
+
+#if defined(REQUIRES_TANGENT_SPACE_VIEW_DIR_INTERPOLATOR)
+    half3 viewDirTS = GetViewDirectionTangentSpace(tangentWS, output.normalWS, viewDirWS);
+    output.viewDirTS = viewDirTS;
+#endif
+
+    OUTPUT_LIGHTMAP_UV(input.lightmapUV, unity_LightmapST, output.lightmapUV);
+    OUTPUT_SH(output.normalWS.xyz, output.vertexSH);
+
+    output.fogFactorAndVertexLight = half4(fogFactor, vertexLight);
+
+#if defined(REQUIRES_WORLD_SPACE_POS_INTERPOLATOR)
+    output.positionWS = vertexInput.positionWS;
+#endif
+
+#if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
+    output.shadowCoord = GetShadowCoord(vertexInput);
+#endif
+    
+    
+    output.positionCS = Toon_Outline(input, vertexInput.positionCS);
+    return output;
+}
+
+//法线外扩和中心坐标外扩的片元着色器
+half4 OutlinePassFragment(Varyings input) : SV_Target
+{
+    return 0;
 }
 
 #endif

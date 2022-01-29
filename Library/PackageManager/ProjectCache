@@ -1,406 +1,414 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: D:/Unity Projects/CXZProject/Packages/manifest.json
+    m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637752186790234973
-    m_Hash: 209566854
+      ticks: 637766233952881151
+    m_Hash: 4147735476
   m_LockFileStatus:
-    m_FilePath: D:/Unity Projects/CXZProject/Packages/packages-lock.json
+    m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637752186790514229
-    m_Hash: 4191428800
+      ticks: 637766233970340104
+    m_Hash: 625174545
 m_EmbeddedPackageManifests:
   m_ManifestsStatus:
-    D:/Unity Projects/CXZProject/Packages/com.unity.shadergraph@10.6.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.shadergraph@10.6.0/package.json
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.cloth@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.cloth@1.0.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108420000000
-      m_Hash: 153839083
-    D:/Unity Projects/CXZProject/Packages/com.unity.mathematics@1.1.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.mathematics@1.1.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637593125540000000
-      m_Hash: 1683433561
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.terrain@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.terrain@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 1486236179
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.jsonserialize@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.jsonserialize@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 2181203077
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.wind@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.wind@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 1702601239
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.uielements@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.uielements@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 1779337080
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.autostreaming@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.autostreaming@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 1565038208
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.physics@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.physics@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 1539944199
-    D:/Unity Projects/CXZProject/Packages/com.unity.ide.rider@2.0.7/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.ide.rider@2.0.7/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637593125540000000
-      m_Hash: 2776164058
-    D:/Unity Projects/CXZProject/Packages/com.unity.ide.vscode@1.2.3/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.ide.vscode@1.2.3/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637593125540000000
-      m_Hash: 3531156017
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.imgui@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.imgui@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 3353798810
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.ai@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.ai@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 4169882363
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.umbra@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.umbra@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 2744141615
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.unitywebrequestwww@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.unitywebrequestwww@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 3874742688
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.unitywebrequesttexture@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.unitywebrequesttexture@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 1292230090
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.uielementsnative@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.uielementsnative@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 2564566794
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.terrainphysics@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.terrainphysics@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 1264913956
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.cloth@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.cloth@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
+        ticks: 637732479860000000
       m_Hash: 3882143653
-    D:/Unity Projects/CXZProject/Packages/com.unity.searcher@4.3.2/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.searcher@4.3.2/package.json
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.ext.nunit@1.0.6/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.ext.nunit@1.0.6/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637593125540000000
-      m_Hash: 2765122510
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.animation@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.animation@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 4236318467
-    D:/Unity Projects/CXZProject/Packages/com.unity.ide.visualstudio@2.0.11/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.ide.visualstudio@2.0.11/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108400000000
-      m_Hash: 140827742
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.unitywebrequestassetbundle@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.unitywebrequestassetbundle@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 287357369
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.vr@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.vr@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 77602398
-    D:/Unity Projects/CXZProject/Packages/com.unity.collab-proxy@1.9.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.collab-proxy@1.9.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108400000000
-      m_Hash: 908516144
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.physics2d@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.physics2d@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 2129714125
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.androidjni@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.androidjni@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 144666287
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.assetbundle@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.assetbundle@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 3663569795
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.director@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.director@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 1559145399
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.unitywebrequestaudio@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.unitywebrequestaudio@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 3583376162
-    D:/Unity Projects/CXZProject/Packages/com.unity.ugui@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.ugui@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108980000000
-      m_Hash: 894188173
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.unitywebrequest@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.unitywebrequest@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 3458510732
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.tilemap@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.tilemap@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 1208479121
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.ui@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.ui@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 2660738107
-    D:/Unity Projects/CXZProject/Packages/com.unity.timeline@1.4.8/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.timeline@1.4.8/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637593125540000000
-      m_Hash: 2585276103
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.screencapture@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.screencapture@1.0.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 676253523
-    D:/Unity Projects/CXZProject/Packages/com.unity.ext.nunit@1.0.6/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.ext.nunit@1.0.6/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637593125540000000
+        ticks: 637732479580000000
       m_Hash: 1122159901
-    D:/Unity Projects/CXZProject/Packages/com.unity.test-framework@1.1.29/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.test-framework@1.1.29/package.json
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.assetbundle@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.assetbundle@1.0.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108420000000
-      m_Hash: 846858920
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.unityanalytics@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.unityanalytics@1.0.0/package.json
+        ticks: 637732479860000000
+      m_Hash: 3663569795
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.timeline@1.4.8/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.timeline@1.4.8/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 876436444
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.audio@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.audio@1.0.0/package.json
+        ticks: 637732479620000000
+      m_Hash: 2585276103
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.ugui@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.ugui@1.0.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 3885514939
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.imageconversion@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.imageconversion@1.0.0/package.json
+        ticks: 637732480100000000
+      m_Hash: 894188173
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.shadergraph@10.7.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.shadergraph@10.7.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 2680750292
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.particlesystem@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.particlesystem@1.0.0/package.json
+        ticks: 637732479620000000
+      m_Hash: 1059779978
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.physics2d@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.physics2d@1.0.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 2836740893
-    D:/Unity Projects/CXZProject/Packages/com.unity.render-pipelines.core@10.6.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.render-pipelines.core@10.6.0/package.json
+        ticks: 637732479860000000
+      m_Hash: 2129714125
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.tilemap@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.tilemap@1.0.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108420000000
-      m_Hash: 1218842301
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.xr@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.xr@1.0.0/package.json
+        ticks: 637732479860000000
+      m_Hash: 1208479121
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.umbra@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.umbra@1.0.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 278955046
-    D:/Unity Projects/CXZProject/Packages/com.unity.textmeshpro@3.0.6/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.textmeshpro@3.0.6/package.json
+        ticks: 637732479860000000
+      m_Hash: 2744141615
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.ui@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.ui@1.0.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637593125540000000
-      m_Hash: 81918871
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.vehicles@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.vehicles@1.0.0/package.json
+        ticks: 637732479860000000
+      m_Hash: 2660738107
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.ai@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.ai@1.0.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 1814146913
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.subsystems@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.subsystems@1.0.0/package.json
+        ticks: 637732479860000000
+      m_Hash: 4169882363
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.render-pipelines.core@10.7.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.render-pipelines.core@10.7.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108840000000
-      m_Hash: 3856157360
-    D:/Unity Projects/CXZProject/Packages/com.unity.render-pipelines.universal@10.6.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.render-pipelines.universal@10.6.0/package.json
+        ticks: 637732479620000000
+      m_Hash: 1805816407
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.render-pipelines.universal@10.7.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.render-pipelines.universal@10.7.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108420000000
-      m_Hash: 2713174790
-    D:/Unity Projects/CXZProject/Packages/com.unity.modules.video@1.0.0/package.json:
-      m_FilePath: D:/Unity Projects/CXZProject/Packages/com.unity.modules.video@1.0.0/package.json
+        ticks: 637732479620000000
+      m_Hash: 178560683
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unitywebrequestaudio@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unitywebrequestaudio@1.0.0/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
         serializedVersion: 2
-        ticks: 637665108840000000
+        ticks: 637732479860000000
+      m_Hash: 3583376162
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.mathematics@1.1.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.mathematics@1.1.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479600000000
+      m_Hash: 1683433561
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.terrainphysics@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.terrainphysics@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 1264913956
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.ide.visualstudio@2.0.11/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.ide.visualstudio@2.0.11/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479580000000
+      m_Hash: 140827742
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.video@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.video@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
       m_Hash: 2211719647
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.uielementsnative@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.uielementsnative@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 2564566794
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unityanalytics@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unityanalytics@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 876436444
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.physics@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.physics@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 1539944199
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.uielements@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.uielements@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 1779337080
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.particlesystem@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.particlesystem@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 2836740893
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.audio@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.audio@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 3885514939
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.ide.rider@2.0.7/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.ide.rider@2.0.7/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479580000000
+      m_Hash: 2776164058
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.textmeshpro@3.0.6/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.textmeshpro@3.0.6/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479620000000
+      m_Hash: 81918871
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.vehicles@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.vehicles@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 1814146913
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.test-framework@1.1.29/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.test-framework@1.1.29/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479620000000
+      m_Hash: 846858920
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.terrain@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.terrain@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 1486236179
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unitywebrequestassetbundle@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unitywebrequestassetbundle@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 287357369
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.vr@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.vr@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 77602398
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unitywebrequesttexture@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unitywebrequesttexture@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 1292230090
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.wind@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.wind@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 1702601239
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.imgui@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.imgui@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 3353798810
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.ide.vscode@1.2.4/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.ide.vscode@1.2.4/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479580000000
+      m_Hash: 716928933
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unitywebrequestwww@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unitywebrequestwww@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 3874742688
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.animation@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.animation@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 4236318467
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.screencapture@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.screencapture@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 676253523
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.nuget.newtonsoft-json@2.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.nuget.newtonsoft-json@2.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479600000000
+      m_Hash: 2811904941
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.imageconversion@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.imageconversion@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 2680750292
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.collab-proxy@1.15.1/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.collab-proxy@1.15.1/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479580000000
+      m_Hash: 4209250825
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.searcher@4.3.2/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.searcher@4.3.2/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479620000000
+      m_Hash: 2765122510
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.androidjni@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.androidjni@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 144666287
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.subsystems@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.subsystems@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 3856157360
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.services.core@1.0.1/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.services.core@1.0.1/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479620000000
+      m_Hash: 1923707533
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unitywebrequest@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.unitywebrequest@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 3458510732
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.director@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.director@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 1559145399
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.xr@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.xr@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 278955046
+    D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.jsonserialize@1.0.0/package.json:
+      m_FilePath: D:/aboutUnity/unityproject/CXZProject/Packages/com.unity.modules.jsonserialize@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 637732479860000000
+      m_Hash: 2181203077
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
@@ -409,7 +417,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.18.19
       source: 1
-      resolvedPath: D:\Unity Projects\CXZProject\Library\PackageCache\com.unity.addressables@1.18.19
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Library\PackageCache\com.unity.addressables@1.18.19
       assetPath: Packages/com.unity.addressables
       name: com.unity.addressables
       displayName: Addressables
@@ -526,6 +534,7 @@ m_PackageAssets:
         - 1.19.11
         - 1.19.13
         - 1.19.14
+        - 1.19.15
         compatible:
         - 0.0.8-preview
         - 0.0.12-preview
@@ -610,6 +619,7 @@ m_PackageAssets:
         - 1.19.11
         - 1.19.13
         - 1.19.14
+        - 1.19.15
         verified: 1.18.19
       dependencies:
       - name: com.unity.scriptablebuildpipeline
@@ -646,7 +656,7 @@ m_PackageAssets:
       registry:
         id: main
         name: 
-        url: https://packages.unity.cn
+        url: https://packages.unity.com
         scopes: []
         isDefault: 1
         capabilities: 7
@@ -663,12 +673,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/Addressables.git
         revision: eb086c67e6a325f887f087e89a7be9a364fcfe4d
         path: 
-    - packageId: com.unity.collab-proxy@file:D:\Unity Projects\CXZProject\Packages\com.unity.collab-proxy@1.9.0
+    - packageId: com.unity.collab-proxy@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.collab-proxy@1.15.1
       testable: 1
       isDirectDependency: 1
-      version: 1.9.0
+      version: 1.15.1
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.collab-proxy@1.9.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.collab-proxy@1.15.1
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -730,14 +740,6 @@ m_PackageAssets:
         - 2.1.0-preview.5
         - 2.1.0-preview.6
         compatible:
-        - 1.9.0
-        - 1.10.2
-        - 1.11.2
-        - 1.12.5
-        - 1.13.5
-        - 1.14.1
-        - 1.14.4
-        - 1.14.7
         - 1.15.1
         - 1.15.4
         - 1.15.7
@@ -751,9 +753,19 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.9.0
-      dependencies: []
-      resolvedDependencies: []
+        verified: 1.15.7
+      dependencies:
+      - name: com.unity.nuget.newtonsoft-json
+        version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      resolvedDependencies:
+      - name: com.unity.nuget.newtonsoft-json
+        version: 2.0.0
+      - name: com.unity.services.core
+        version: 1.0.1
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
       keywords:
       - backup
       - cloud
@@ -786,14 +798,14 @@ m_PackageAssets:
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: 51447944a1e7d94937e6b7f9e887d58f5097ed13
+        revision: 44478cbd3117b13beac17ff868e64d0aed5c4071
         path: 
-    - packageId: com.unity.ide.rider@file:D:\Unity Projects\CXZProject\Packages\com.unity.ide.rider@2.0.7
+    - packageId: com.unity.ide.rider@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.ide.rider@2.0.7
       testable: 1
       isDirectDependency: 1
       version: 2.0.7
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.ide.rider@2.0.7
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -835,6 +847,7 @@ m_PackageAssets:
         - 3.0.5
         - 3.0.6
         - 3.0.7
+        - 3.0.9
         compatible:
         - 1.0.2
         - 1.0.6
@@ -861,6 +874,7 @@ m_PackageAssets:
         - 3.0.5
         - 3.0.6
         - 3.0.7
+        - 3.0.9
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -895,12 +909,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
         path: 
-    - packageId: com.unity.ide.visualstudio@file:D:\Unity Projects\CXZProject\Packages\com.unity.ide.visualstudio@2.0.11
+    - packageId: com.unity.ide.visualstudio@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.ide.visualstudio@2.0.11
       testable: 1
       isDirectDependency: 1
       version: 2.0.11
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.ide.visualstudio@2.0.11
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.ide.visualstudio@2.0.11
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -984,12 +998,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
         revision: 680e06d94ffca728223ae2cb14bb919cd354e2c1
         path: 
-    - packageId: com.unity.ide.vscode@file:D:\Unity Projects\CXZProject\Packages\com.unity.ide.vscode@1.2.3
+    - packageId: com.unity.ide.vscode@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.ide.vscode@1.2.4
       testable: 1
       isDirectDependency: 1
-      version: 1.2.3
+      version: 1.2.4
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.ide.vscode@1.2.3
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.ide.vscode@1.2.4
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -1052,15 +1066,15 @@ m_PackageAssets:
       hasRepository: 1
       repository:
         type: git
-        url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
-        revision: 547f63839bdc87e0aed2c9e0d84f8f6336a83ea3
+        url: https://github.com/Unity-Technologies/com.unity.ide.vscode.git
+        revision: 1f4f605d5c988cb610c372b5c5216c46cc8f5d30
         path: 
-    - packageId: com.unity.render-pipelines.universal@file:D:\Unity Projects\CXZProject\Packages\com.unity.render-pipelines.universal@10.6.0
+    - packageId: com.unity.render-pipelines.universal@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.render-pipelines.universal@10.7.0
       testable: 1
       isDirectDependency: 1
-      version: 10.6.0
+      version: 10.7.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.render-pipelines.universal@10.6.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.render-pipelines.universal@10.7.0
       assetPath: Packages/com.unity.render-pipelines.universal
       name: com.unity.render-pipelines.universal
       displayName: Universal RP
@@ -1119,31 +1133,36 @@ m_PackageAssets:
         - 10.6.0
         - 10.7.0
         - 10.8.0
+        - 10.8.1
         compatible:
-        - 10.6.0
         - 10.7.0
         - 10.8.0
-        verified: 10.6.0
+        - 10.8.1
+        verified: 10.7.0
       dependencies:
       - name: com.unity.mathematics
         version: 1.1.0
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.shadergraph
-        version: 10.6.0
+        version: 10.7.0
       resolvedDependencies:
       - name: com.unity.mathematics
         version: 1.1.0
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.ugui
         version: 1.0.0
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
         version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       - name: com.unity.shadergraph
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.searcher
         version: 4.3.2
       keywords:
@@ -1171,14 +1190,14 @@ m_PackageAssets:
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
-    - packageId: com.unity.test-framework@file:D:\Unity Projects\CXZProject\Packages\com.unity.test-framework@1.1.29
+    - packageId: com.unity.test-framework@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.test-framework@1.1.29
       testable: 1
       isDirectDependency: 1
       version: 1.1.29
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.test-framework@1.1.29
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.test-framework@1.1.29
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -1266,12 +1285,12 @@ m_PackageAssets:
         url: https://github.com/Unity-Technologies/com.unity.test-framework.git
         revision: dac53542acdab7a12e9ebf111ac588d0e53cf483
         path: 
-    - packageId: com.unity.textmeshpro@file:D:\Unity Projects\CXZProject\Packages\com.unity.textmeshpro@3.0.6
+    - packageId: com.unity.textmeshpro@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.textmeshpro@3.0.6
       testable: 1
       isDirectDependency: 1
       version: 3.0.6
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.textmeshpro@3.0.6
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.textmeshpro@3.0.6
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -1429,12 +1448,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
         revision: 01e57e3b7de18af9dfe9baaa0a0ff5cc4765c899
         path: 
-    - packageId: com.unity.timeline@file:D:\Unity Projects\CXZProject\Packages\com.unity.timeline@1.4.8
+    - packageId: com.unity.timeline@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.timeline@1.4.8
       testable: 1
       isDirectDependency: 1
       version: 1.4.8
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.timeline@1.4.8
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.timeline@1.4.8
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -1587,12 +1606,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
         revision: 527e4364e28028f20f04fc51db671eb4bb910a26
         path: 
-    - packageId: com.unity.ugui@file:D:\Unity Projects\CXZProject\Packages\com.unity.ugui@1.0.0
+    - packageId: com.unity.ugui@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.ugui@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.ugui@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.ugui@1.0.0
       assetPath: Packages/com.unity.ugui
       name: com.unity.ugui
       displayName: Unity UI
@@ -1650,12 +1669,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.ai@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.ai@1.0.0
+    - packageId: com.unity.modules.ai@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.ai@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.ai@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.ai@1.0.0
       assetPath: Packages/com.unity.modules.ai
       name: com.unity.modules.ai
       displayName: AI
@@ -1698,12 +1717,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.androidjni@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.androidjni@1.0.0
+    - packageId: com.unity.modules.androidjni@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.androidjni@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.androidjni@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.androidjni@1.0.0
       assetPath: Packages/com.unity.modules.androidjni
       name: com.unity.modules.androidjni
       displayName: Android JNI
@@ -1746,12 +1765,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.animation@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.animation@1.0.0
+    - packageId: com.unity.modules.animation@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.animation@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.animation@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.animation@1.0.0
       assetPath: Packages/com.unity.modules.animation
       name: com.unity.modules.animation
       displayName: Animation
@@ -1794,12 +1813,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.assetbundle@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.assetbundle@1.0.0
+    - packageId: com.unity.modules.assetbundle@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.assetbundle@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.assetbundle@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.assetbundle@1.0.0
       assetPath: Packages/com.unity.modules.assetbundle
       name: com.unity.modules.assetbundle
       displayName: Asset Bundle
@@ -1842,12 +1861,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.audio@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.audio@1.0.0
+    - packageId: com.unity.modules.audio@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.audio@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.audio@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.audio@1.0.0
       assetPath: Packages/com.unity.modules.audio
       name: com.unity.modules.audio
       displayName: Audio
@@ -1890,84 +1909,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.autostreaming@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.autostreaming@1.0.0
+    - packageId: com.unity.modules.cloth@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.cloth@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.autostreaming@1.0.0
-      assetPath: Packages/com.unity.modules.autostreaming
-      name: com.unity.modules.autostreaming
-      displayName: Auto Streaming
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: module
-      description: 'The AutoStreaming module implements the resource auto-streaming
-        feature in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AutoStreamingModule.html'
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 1.0.0
-        compatible:
-        - 1.0.0
-        verified: 1.0.0
-      dependencies:
-      - name: com.unity.modules.animation
-        version: 1.0.0
-      - name: com.unity.modules.assetbundle
-        version: 1.0.0
-      - name: com.unity.modules.audio
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
-      - name: com.unity.modules.unitywebrequest
-        version: 1.0.0
-      - name: com.unity.modules.unitywebrequestassetbundle
-        version: 1.0.0
-      resolvedDependencies:
-      - name: com.unity.modules.animation
-        version: 1.0.0
-      - name: com.unity.modules.assetbundle
-        version: 1.0.0
-      - name: com.unity.modules.audio
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
-      - name: com.unity.modules.unitywebrequest
-        version: 1.0.0
-      - name: com.unity.modules.unitywebrequestassetbundle
-        version: 1.0.0
-      keywords: []
-      registry:
-        id: 
-        name: 
-        url: 
-        scopes: []
-        isDefault: 0
-        capabilities: 0
-      hasRegistry: 0
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 0
-      documentationUrl: 
-      hasRepository: 0
-      repository:
-        type: 
-        url: 
-        revision: 
-        path: 
-    - packageId: com.unity.modules.cloth@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.cloth@1.0.0
-      testable: 1
-      isDirectDependency: 1
-      version: 1.0.0
-      source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.cloth@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.cloth@1.0.0
       assetPath: Packages/com.unity.modules.cloth
       name: com.unity.modules.cloth
       displayName: Cloth
@@ -2014,12 +1961,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.director@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.director@1.0.0
+    - packageId: com.unity.modules.director@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.director@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.director@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.director@1.0.0
       assetPath: Packages/com.unity.modules.director
       name: com.unity.modules.director
       displayName: Director
@@ -2070,12 +2017,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.imageconversion@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.imageconversion@1.0.0
+    - packageId: com.unity.modules.imageconversion@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.imageconversion@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.imageconversion@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.imageconversion@1.0.0
       assetPath: Packages/com.unity.modules.imageconversion
       name: com.unity.modules.imageconversion
       displayName: Image Conversion
@@ -2119,12 +2066,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.imgui@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.imgui@1.0.0
+    - packageId: com.unity.modules.imgui@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.imgui@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.imgui@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.imgui@1.0.0
       assetPath: Packages/com.unity.modules.imgui
       name: com.unity.modules.imgui
       displayName: IMGUI
@@ -2167,12 +2114,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.jsonserialize@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.jsonserialize@1.0.0
+    - packageId: com.unity.modules.jsonserialize@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.jsonserialize@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.jsonserialize@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.jsonserialize@1.0.0
       assetPath: Packages/com.unity.modules.jsonserialize
       name: com.unity.modules.jsonserialize
       displayName: JSONSerialize
@@ -2215,12 +2162,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.particlesystem@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.particlesystem@1.0.0
+    - packageId: com.unity.modules.particlesystem@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.particlesystem@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.particlesystem@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.particlesystem@1.0.0
       assetPath: Packages/com.unity.modules.particlesystem
       name: com.unity.modules.particlesystem
       displayName: Particle System
@@ -2263,12 +2210,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.physics@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.physics@1.0.0
+    - packageId: com.unity.modules.physics@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.physics@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.physics@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.physics@1.0.0
       assetPath: Packages/com.unity.modules.physics
       name: com.unity.modules.physics
       displayName: Physics
@@ -2311,12 +2258,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.physics2d@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.physics2d@1.0.0
+    - packageId: com.unity.modules.physics2d@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.physics2d@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.physics2d@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.physics2d@1.0.0
       assetPath: Packages/com.unity.modules.physics2d
       name: com.unity.modules.physics2d
       displayName: Physics 2D
@@ -2359,12 +2306,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.screencapture@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.screencapture@1.0.0
+    - packageId: com.unity.modules.screencapture@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.screencapture@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.screencapture@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.screencapture@1.0.0
       assetPath: Packages/com.unity.modules.screencapture
       name: com.unity.modules.screencapture
       displayName: Screen Capture
@@ -2411,12 +2358,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.terrain@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.terrain@1.0.0
+    - packageId: com.unity.modules.terrain@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.terrain@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.terrain@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.terrain@1.0.0
       assetPath: Packages/com.unity.modules.terrain
       name: com.unity.modules.terrain
       displayName: Terrain
@@ -2459,12 +2406,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.terrainphysics@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.terrainphysics@1.0.0
+    - packageId: com.unity.modules.terrainphysics@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.terrainphysics@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.terrainphysics@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.terrainphysics@1.0.0
       assetPath: Packages/com.unity.modules.terrainphysics
       name: com.unity.modules.terrainphysics
       displayName: Terrain Physics
@@ -2515,12 +2462,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.tilemap@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.tilemap@1.0.0
+    - packageId: com.unity.modules.tilemap@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.tilemap@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.tilemap@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.tilemap@1.0.0
       assetPath: Packages/com.unity.modules.tilemap
       name: com.unity.modules.tilemap
       displayName: Tilemap
@@ -2567,12 +2514,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.ui@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.ui@1.0.0
+    - packageId: com.unity.modules.ui@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.ui@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.ui@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.ui@1.0.0
       assetPath: Packages/com.unity.modules.ui
       name: com.unity.modules.ui
       displayName: UI
@@ -2615,12 +2562,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.uielements@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.uielements@1.0.0
+    - packageId: com.unity.modules.uielements@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.uielements@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.uielements@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.uielements@1.0.0
       assetPath: Packages/com.unity.modules.uielements
       name: com.unity.modules.uielements
       displayName: UIElements
@@ -2679,12 +2626,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.umbra@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.umbra@1.0.0
+    - packageId: com.unity.modules.umbra@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.umbra@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.umbra@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.umbra@1.0.0
       assetPath: Packages/com.unity.modules.umbra
       name: com.unity.modules.umbra
       displayName: Umbra
@@ -2727,12 +2674,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.unityanalytics@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.unityanalytics@1.0.0
+    - packageId: com.unity.modules.unityanalytics@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unityanalytics@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.unityanalytics@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unityanalytics@1.0.0
       assetPath: Packages/com.unity.modules.unityanalytics
       name: com.unity.modules.unityanalytics
       displayName: Unity Analytics
@@ -2783,12 +2730,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.unitywebrequest@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.unitywebrequest@1.0.0
+    - packageId: com.unity.modules.unitywebrequest@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unitywebrequest@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.unitywebrequest@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unitywebrequest@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequest
       name: com.unity.modules.unitywebrequest
       displayName: Unity Web Request
@@ -2831,12 +2778,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.unitywebrequestassetbundle@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.unitywebrequestassetbundle@1.0.0
+    - packageId: com.unity.modules.unitywebrequestassetbundle@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unitywebrequestassetbundle@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.unitywebrequestassetbundle@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unitywebrequestassetbundle@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
       name: com.unity.modules.unitywebrequestassetbundle
       displayName: Unity Web Request Asset Bundle
@@ -2887,12 +2834,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.unitywebrequestaudio@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.unitywebrequestaudio@1.0.0
+    - packageId: com.unity.modules.unitywebrequestaudio@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unitywebrequestaudio@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.unitywebrequestaudio@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unitywebrequestaudio@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestaudio
       name: com.unity.modules.unitywebrequestaudio
       displayName: Unity Web Request Audio
@@ -2943,12 +2890,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.unitywebrequesttexture@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.unitywebrequesttexture@1.0.0
+    - packageId: com.unity.modules.unitywebrequesttexture@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unitywebrequesttexture@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.unitywebrequesttexture@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unitywebrequesttexture@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequesttexture
       name: com.unity.modules.unitywebrequesttexture
       displayName: Unity Web Request Texture
@@ -2999,12 +2946,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.unitywebrequestwww@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.unitywebrequestwww@1.0.0
+    - packageId: com.unity.modules.unitywebrequestwww@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unitywebrequestwww@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.unitywebrequestwww@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.unitywebrequestwww@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestwww
       name: com.unity.modules.unitywebrequestwww
       displayName: Unity Web Request WWW
@@ -3071,12 +3018,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.vehicles@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.vehicles@1.0.0
+    - packageId: com.unity.modules.vehicles@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.vehicles@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.vehicles@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.vehicles@1.0.0
       assetPath: Packages/com.unity.modules.vehicles
       name: com.unity.modules.vehicles
       displayName: Vehicles
@@ -3123,12 +3070,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.video@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.video@1.0.0
+    - packageId: com.unity.modules.video@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.video@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.video@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.video@1.0.0
       assetPath: Packages/com.unity.modules.video
       name: com.unity.modules.video
       displayName: Video
@@ -3183,12 +3130,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.vr@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.vr@1.0.0
+    - packageId: com.unity.modules.vr@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.vr@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.vr@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.vr@1.0.0
       assetPath: Packages/com.unity.modules.vr
       name: com.unity.modules.vr
       displayName: VR
@@ -3245,12 +3192,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.wind@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.wind@1.0.0
+    - packageId: com.unity.modules.wind@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.wind@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.wind@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.wind@1.0.0
       assetPath: Packages/com.unity.modules.wind
       name: com.unity.modules.wind
       displayName: Wind
@@ -3293,12 +3240,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.xr@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.xr@1.0.0
+    - packageId: com.unity.modules.xr@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.xr@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.xr@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.xr@1.0.0
       assetPath: Packages/com.unity.modules.xr
       name: com.unity.modules.xr
       displayName: XR
@@ -3353,12 +3300,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.ext.nunit@file:D:\Unity Projects\CXZProject\Packages\com.unity.ext.nunit@1.0.6
+    - packageId: com.unity.ext.nunit@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.ext.nunit@1.0.6
       testable: 1
       isDirectDependency: 1
       version: 1.0.6
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.ext.nunit@1.0.6
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -3414,12 +3361,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ext.nunit.git
         revision: 29ea4d6504a5f58fb3a6934db839aa80ae6d9d88
         path: 
-    - packageId: com.unity.mathematics@file:D:\Unity Projects\CXZProject\Packages\com.unity.mathematics@1.1.0
+    - packageId: com.unity.mathematics@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.mathematics@1.1.0
       testable: 1
       isDirectDependency: 1
       version: 1.1.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.mathematics@1.1.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.mathematics@1.1.0
       assetPath: Packages/com.unity.mathematics
       name: com.unity.mathematics
       displayName: Mathematics
@@ -3493,12 +3440,12 @@ m_PackageAssets:
         url: git@github.com:Unity-Technologies/Unity.Mathematics.git
         revision: 0a3dfafaf606098ea681de4c4be60f3aac63b773
         path: 
-    - packageId: com.unity.modules.subsystems@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.subsystems@1.0.0
+    - packageId: com.unity.modules.subsystems@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.subsystems@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.subsystems@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.subsystems@1.0.0
       assetPath: Packages/com.unity.modules.subsystems
       name: com.unity.modules.subsystems
       displayName: Subsystems
@@ -3545,12 +3492,12 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.modules.uielementsnative@file:D:\Unity Projects\CXZProject\Packages\com.unity.modules.uielementsnative@1.0.0
+    - packageId: com.unity.modules.uielementsnative@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.uielementsnative@1.0.0
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.modules.uielementsnative@1.0.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.modules.uielementsnative@1.0.0
       assetPath: Packages/com.unity.modules.uielementsnative
       name: com.unity.modules.uielementsnative
       displayName: UIElements Native
@@ -3604,12 +3551,88 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.unity.render-pipelines.core@file:D:\Unity Projects\CXZProject\Packages\com.unity.render-pipelines.core@10.6.0
+    - packageId: com.unity.nuget.newtonsoft-json@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.nuget.newtonsoft-json@2.0.0
       testable: 1
       isDirectDependency: 1
-      version: 10.6.0
+      version: 2.0.0
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.render-pipelines.core@10.6.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.nuget.newtonsoft-json@2.0.0
+      assetPath: Packages/com.unity.nuget.newtonsoft-json
+      name: com.unity.nuget.newtonsoft-json
+      displayName: Newtonsoft Json
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: library
+      description: 'Newtonsoft Json for use in Unity projects and Unity packages.
+        Currently synced to version 12.0.2.
+
+
+        This package is used for advanced
+        json serialization and deserialization. Most Unity users will be better suited
+        using the existing json tools built into Unity.
+
+        To avoid assembly
+        clashes, please use this package if you intend to use Newtonsoft Json.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.1-preview.1
+        - 1.1.2
+        - 2.0.0-preview
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
+        - 2.0.0
+        - 2.0.1-preview.1
+        - 2.0.2
+        compatible:
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.1-preview.1
+        - 1.1.2
+        - 2.0.0-preview
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
+        - 2.0.0
+        - 2.0.1-preview.1
+        - 2.0.2
+        verified: 2.0.2
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+        revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
+        path: 
+    - packageId: com.unity.render-pipelines.core@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.render-pipelines.core@10.7.0
+      testable: 1
+      isDirectDependency: 1
+      version: 10.7.0
+      source: 3
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.render-pipelines.core@10.7.0
       assetPath: Packages/com.unity.render-pipelines.core
       name: com.unity.render-pipelines.core
       displayName: Core RP Library
@@ -3724,13 +3747,18 @@ m_PackageAssets:
         - 10.6.0
         - 10.7.0
         - 10.8.0
+        - 10.8.1
         compatible:
-        - 10.6.0
         - 10.7.0
         - 10.8.0
-        verified: 10.6.0
+        - 10.8.1
+        verified: 10.7.0
       dependencies:
       - name: com.unity.ugui
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
         version: 1.0.0
       resolvedDependencies:
       - name: com.unity.ugui
@@ -3738,6 +3766,10 @@ m_PackageAssets:
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
         version: 1.0.0
       keywords: []
       registry:
@@ -3758,14 +3790,14 @@ m_PackageAssets:
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
-    - packageId: com.unity.searcher@file:D:\Unity Projects\CXZProject\Packages\com.unity.searcher@4.3.2
+    - packageId: com.unity.searcher@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.searcher@4.3.2
       testable: 1
       isDirectDependency: 1
       version: 4.3.2
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.searcher@4.3.2
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.searcher@4.3.2
       assetPath: Packages/com.unity.searcher
       name: com.unity.searcher
       displayName: Searcher
@@ -3838,12 +3870,79 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.searcher.git
         revision: 798bfb84c8f09f7788a3a88c3c16d72c50451530
         path: 
-    - packageId: com.unity.shadergraph@file:D:\Unity Projects\CXZProject\Packages\com.unity.shadergraph@10.6.0
+    - packageId: com.unity.services.core@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.services.core@1.0.1
       testable: 1
       isDirectDependency: 1
-      version: 10.6.0
+      version: 1.0.1
       source: 3
-      resolvedPath: D:\Unity Projects\CXZProject\Packages\com.unity.shadergraph@10.6.0
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.services.core@1.0.1
+      assetPath: Packages/com.unity.services.core
+      name: com.unity.services.core
+      displayName: Services Core
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'This package defines common components used by multiple Game
+        Service packages.
+
+        These are standardized and aim to unify the overall
+        experience of working with Game Services packages.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.1
+        - 1.1.0-pre.7
+        - 1.1.0-pre.8
+        - 1.1.0-pre.9
+        - 1.1.0-pre.10
+        - 1.1.0-pre.11
+        - 1.1.0-pre.41
+        compatible:
+        - 1.0.1
+        - 1.1.0-pre.7
+        - 1.1.0-pre.8
+        - 1.1.0-pre.9
+        - 1.1.0-pre.10
+        - 1.1.0-pre.11
+        - 1.1.0-pre.41
+        verified: 1.0.1
+      dependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.modules.unitywebrequest
+        version: 1.0.0
+      keywords: []
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
+        revision: 4cd880d4fd5c60597629249bf4f324e4c8d7aa2e
+        path: 
+    - packageId: com.unity.shadergraph@file:D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.shadergraph@10.7.0
+      testable: 1
+      isDirectDependency: 1
+      version: 10.7.0
+      source: 3
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Packages\com.unity.shadergraph@10.7.0
       assetPath: Packages/com.unity.shadergraph
       name: com.unity.shadergraph
       displayName: Shader Graph
@@ -3955,24 +4054,29 @@ m_PackageAssets:
         - 10.6.0
         - 10.7.0
         - 10.8.0
+        - 10.8.1
         compatible:
-        - 10.6.0
         - 10.7.0
         - 10.8.0
-        verified: 10.6.0
+        - 10.8.1
+        verified: 10.7.0
       dependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.searcher
         version: 4.3.2
       resolvedDependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.ugui
         version: 1.0.0
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
         version: 1.0.0
       - name: com.unity.searcher
         version: 4.3.2
@@ -3995,14 +4099,14 @@ m_PackageAssets:
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
     - packageId: com.unity.scriptablebuildpipeline@1.19.2
       testable: 0
       isDirectDependency: 0
       version: 1.19.2
       source: 1
-      resolvedPath: D:\Unity Projects\CXZProject\Library\PackageCache\com.unity.scriptablebuildpipeline@1.19.2
+      resolvedPath: D:\aboutUnity\unityproject\CXZProject\Library\PackageCache\com.unity.scriptablebuildpipeline@1.19.2
       assetPath: Packages/com.unity.scriptablebuildpipeline
       name: com.unity.scriptablebuildpipeline
       displayName: Scriptable Build Pipeline
@@ -4067,6 +4171,7 @@ m_PackageAssets:
         - 1.19.2
         - 1.19.3
         - 1.19.4
+        - 1.19.5
         compatible:
         - 0.0.5-preview
         - 0.0.6-preview
@@ -4115,7 +4220,8 @@ m_PackageAssets:
         - 1.19.2
         - 1.19.3
         - 1.19.4
-        verified: 1.19.4
+        - 1.19.5
+        verified: 1.19.5
       dependencies: []
       resolvedDependencies: []
       keywords:
@@ -4128,7 +4234,7 @@ m_PackageAssets:
       registry:
         id: main
         name: 
-        url: https://packages.unity.cn
+        url: https://packages.unity.com
         scopes: []
         isDefault: 1
         capabilities: 7
@@ -4146,20 +4252,6 @@ m_PackageAssets:
         revision: 5b4d3ed6277bc723c027df95bb74a0753abccc85
         path: 
   m_LocalPackages:
-    m_LocalFileStatus:
-    - m_FilePath: D:\Unity Projects\CXZProject\Packages\com.unity.render-pipelines.universal@10.6.0/package.json
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 637665108420000000
-      m_Hash: 2713174790
-    - m_FilePath: D:\Unity Projects\CXZProject\Packages\com.unity.render-pipelines.universal@10.6.0
-      m_PathExists: 1
-      m_ContentTrackingEnabled: 1
-      m_ModificationDate:
-        serializedVersion: 2
-        ticks: 0
-      m_Hash: 0
-m_ProjectPath: D:/Unity Projects/CXZProject/Packages
-m_EditorVersion: 2020.3.18f1c1 (94c5a6b4c040)
+    m_LocalFileStatus: []
+m_ProjectPath: D:/aboutUnity/unityproject/CXZProject/Packages
+m_EditorVersion: 2020.3.23f1 (c5d91304a876)

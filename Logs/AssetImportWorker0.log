@@ -1,202 +1,123 @@
 Using pre-set license
-Built from '2020.3/china_unity/release' branch; Version is '2020.3.18f1c1 (94c5a6b4c040) revision 9749926'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1415; Version 2009; 64bit' Language: 'zh' Physical Memory: 32706 MB
+Built from '2020.3/staging' branch; Version is '2020.3.23f1 (c5d91304a876) revision 12966163'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19044.1466; Version 2009; 64bit' Language: 'zh' Physical Memory: 8030 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.18f1c1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity Projects/CXZProject
+D:/aboutUnity/unityproject/CXZProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58654
-Successfully changed project path to: D:/Unity Projects/CXZProject
-D:/Unity Projects/CXZProject
+60087
+Successfully changed project path to: D:/aboutUnity/unityproject/CXZProject
+D:/aboutUnity/unityproject/CXZProject
 Using Asset Import Pipeline V2.
-AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 44.35 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 55.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.18f1c1 (94c5a6b4c040)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1c1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity Projects/CXZProject/Assets
+Initialize engine version: 2020.3.23f1 (c5d91304a876)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/aboutUnity/unityproject/CXZProject/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
     Vendor:   
-    VRAM:     12143 MB
-    Driver:   30.0.14.7111
+    VRAM:     5991 MB
+    Driver:   30.0.14.9709
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1c1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001360 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001454 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.13 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 51.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.407 seconds
+- Completed reload, in  0.569 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1408ms)
-		BeginReloadAssembly (41ms)
+	ReloadAssembly (569ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (362ms)
-			LoadAssemblies (40ms)
+		EndReloadAssembly (444ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (131ms)
+			SetupTypeCache (158ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (147ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (170ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (45ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (63ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
+				RefreshPlugins (52ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001765 seconds.
+Registered in 0.003680 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 76.04 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.962 seconds
+- Completed reload, in  1.536 seconds
 Domain Reload Profiling:
-	ReloadAssembly (963ms)
-		BeginReloadAssembly (118ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (795ms)
-			LoadAssemblies (77ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (279ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (294ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (46ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (162ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3136 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.3 MB.
-System memory in use after: 143.5 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3575.
-Total: 3.069000 ms (FindLiveObjects: 0.305100 ms CreateObjectMapping: 0.211400 ms MarkObjects: 2.488100 ms  DeleteObjects: 0.062900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Sources/Materials/Noelle/Cloth.mat
-  artifactKey: Guid(8edd4dd519ec41440a286774a6de9c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Cloth.mat using Guid(8edd4dd519ec41440a286774a6de9c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af7564e52069b301e28191b4678d6d40') in 0.224478 seconds 
-  Import took 0.228516 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Sources/Materials/Noelle/Hair.mat
-  artifactKey: Guid(403dc6be61d842d46b13f52b6ac006ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Hair.mat using Guid(403dc6be61d842d46b13f52b6ac006ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ae5caea7c2186ef66bb9af545286aa') in 0.038210 seconds 
-  Import took 0.042016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Sources/Materials/Noelle/Skin.mat
-  artifactKey: Guid(13f0e9ea7be1c094f80310c9fb256a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Skin.mat using Guid(13f0e9ea7be1c094f80310c9fb256a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c29472f55a5136c292e5c25be90f39') in 0.032683 seconds 
-  Import took 0.037339 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002560 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.036 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1037ms)
-		BeginReloadAssembly (109ms)
+	ReloadAssembly (1538ms)
+		BeginReloadAssembly (175ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (877ms)
-			LoadAssemblies (74ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1287ms)
+			LoadAssemblies (128ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (364ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (264ms)
+			SetupTypeCache (436ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (513ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (180ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
+				RefreshPlugins (76ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (240ms)
+				ProcessInitializeOnLoadMethodAttributes (77ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3023 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.2 MB.
-System memory in use after: 141.5 MB.
+Unloading 3249 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.8 MB.
+System memory in use after: 141.0 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3655.
-Total: 2.831200 ms (FindLiveObjects: 0.373100 ms CreateObjectMapping: 0.166000 ms MarkObjects: 2.277500 ms  DeleteObjects: 0.013500 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3687.
+Total: 5.338300 ms (FindLiveObjects: 0.420100 ms CreateObjectMapping: 0.266500 ms MarkObjects: 4.513600 ms  DeleteObjects: 0.134600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -210,154 +131,281 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1060.925906 seconds.
-  path: Assets/Sources/Materials/Noelle/Cloth.mat
-  artifactKey: Guid(8edd4dd519ec41440a286774a6de9c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Cloth.mat using Guid(8edd4dd519ec41440a286774a6de9c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6eb8604a113d59e66376db78001d2d1') in 0.151332 seconds 
-  Import took 0.156809 seconds .
+  path: Assets/Sources/Models/Noelle/Noelle.fbx
+  artifactKey: Guid(a3d0481a8120775419ae143d178b3a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Models/Noelle/Noelle.fbx using Guid(a3d0481a8120775419ae143d178b3a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4c4c3eaaa3421f9034cb8b055c39e0') in 0.478816 seconds 
+  Import took 0.487915 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Sources/Materials/Noelle/Shoulder.mat
-  artifactKey: Guid(208ec16aa532c7d4c9410beb33a82a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Shoulder.mat using Guid(208ec16aa532c7d4c9410beb33a82a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '910fe315ba4fa77de744eec0758a2d43') in 0.015676 seconds 
-  Import took 0.020375 seconds .
+  Time since last request: 38.437896 seconds.
+  path: Assets/ExampleAssets/Materials/Hammer_Mat.mat
+  artifactKey: Guid(4efcffd7ae23f1e41943fd914b18da10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Materials/Hammer_Mat.mat using Guid(4efcffd7ae23f1e41943fd914b18da10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324c8001df26ce9901f021e6ed38423d') in 0.044181 seconds 
+  Import took 0.050298 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000160 seconds.
+  Time since last request: 0.000314 seconds.
+  path: Assets/ExampleAssets/Materials/Jigsaw_Mat.mat
+  artifactKey: Guid(801db2d997a562b4ea333aa4593ce0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Materials/Jigsaw_Mat.mat using Guid(801db2d997a562b4ea333aa4593ce0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dedee178d0b6b79e3128cdc32fe353b') in 0.044033 seconds 
+  Import took 0.049567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/ExampleAssets/Materials/LightBulb_Mat.mat
+  artifactKey: Guid(ec739259ec61f5d4ba3ed6d34fd802a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Materials/LightBulb_Mat.mat using Guid(ec739259ec61f5d4ba3ed6d34fd802a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16bd56895243f1849c927727dca3c5ec') in 0.454671 seconds 
+  Import took 0.461165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/ExampleAssets/Materials/HardHat_Mat.mat
+  artifactKey: Guid(e93789f0a5d66df4a81613935579642b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Materials/HardHat_Mat.mat using Guid(e93789f0a5d66df4a81613935579642b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91eafd76554888f5da6e92d2f2188cc7') in 0.051044 seconds 
+  Import took 0.057283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/ExampleAssets/Materials/Liquid_Mat.mat
+  artifactKey: Guid(c532880e607f8c84d8b9bf0c46a522ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExampleAssets/Materials/Liquid_Mat.mat using Guid(c532880e607f8c84d8b9bf0c46a522ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63647ad075e08b931d1013830733741b') in 0.023133 seconds 
+  Import took 0.028737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56167.210094 seconds.
+  path: Assets/Sources/Shaders/ToonClothShader.shader
+  artifactKey: Guid(3ad2e4f22dff8324dbd0c492246b87c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Shaders/ToonClothShader.shader using Guid(3ad2e4f22dff8324dbd0c492246b87c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a18cd519e16eff1ea35487c333344849') in 0.197469 seconds 
+  Import took 0.691581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Sources/Shaders/Outline0.shader
+  artifactKey: Guid(a49aaf457ade0bd4baf3b8d06a528e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Shaders/Outline0.shader using Guid(a49aaf457ade0bd4baf3b8d06a528e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62608ab5ebffd91a7553f87df13963d') in 0.006630 seconds 
+  Import took 0.014176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.874829 seconds.
+  path: Assets/Sources/ShaderLibrary/ToonShaderForwardPass.hlsl
+  artifactKey: Guid(116bd973269b9f741b7177c8523b9e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/ShaderLibrary/ToonShaderForwardPass.hlsl using Guid(116bd973269b9f741b7177c8523b9e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb3a8086c62b37d73f5918797cb2b39') in 0.104889 seconds 
+  Import took 0.158861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.278471 seconds.
+  path: Assets/Sources/ShaderLibrary/ToonShaderInput.hlsl
+  artifactKey: Guid(839490490abe73448ab4f0c0a621a4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/ShaderLibrary/ToonShaderInput.hlsl using Guid(839490490abe73448ab4f0c0a621a4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c0378533196040709d26151edf30b2') in 0.007889 seconds 
+  Import took 0.014365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.841700 seconds.
+  path: Assets/Sources/ShaderLibrary/ToonShaderForwardPass 1.hlsl
+  artifactKey: Guid(b3bc2e19ca66c30448850f5fcd5ae374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/ShaderLibrary/ToonShaderForwardPass 1.hlsl using Guid(b3bc2e19ca66c30448850f5fcd5ae374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea68b60f5abbe14c159c2424cd06364') in 0.007064 seconds 
+  Import took 0.016334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.964203 seconds.
+  path: Assets/Sources/ShaderLibrary/ToonShaderOutline.hlsl
+  artifactKey: Guid(257c96b0ea3d5c54c89fd60074d38149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/ShaderLibrary/ToonShaderOutline.hlsl using Guid(257c96b0ea3d5c54c89fd60074d38149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65625003f253d04377c0fb9d57084a5b') in 0.008425 seconds 
+  Import took 0.017431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 213.234869 seconds.
+  path: Assets/Sources/ShaderLibrary/ToonShaderOutline.hlsl
+  artifactKey: Guid(257c96b0ea3d5c54c89fd60074d38149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/ShaderLibrary/ToonShaderOutline.hlsl using Guid(257c96b0ea3d5c54c89fd60074d38149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6ba188e24066e9a2e828a37e4899c2') in 0.003133 seconds 
+  Import took 0.012540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 487.306467 seconds.
+  path: Assets/Sources/Materials/Noelle/EyeWhite.mat
+  artifactKey: Guid(70dcd91f3c952354c99084044a4bd9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/EyeWhite.mat using Guid(70dcd91f3c952354c99084044a4bd9a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17359a1c76c157b62c2df6db4fb39984') in 0.700208 seconds 
+  Import took 0.709435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
   path: Assets/Sources/Materials/Noelle/Hair.mat
   artifactKey: Guid(403dc6be61d842d46b13f52b6ac006ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Hair.mat using Guid(403dc6be61d842d46b13f52b6ac006ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c542c9810e94a2417c4dc38f5c463804') in 0.015123 seconds 
-  Import took 0.019485 seconds .
+Start importing Assets/Sources/Materials/Noelle/Hair.mat using Guid(403dc6be61d842d46b13f52b6ac006ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c71cb3fb6c2142bd89aef804d29f93cf') in 0.060191 seconds 
+  Import took 0.068362 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Sources/Materials/Noelle/Skin.mat
-  artifactKey: Guid(13f0e9ea7be1c094f80310c9fb256a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Skin.mat using Guid(13f0e9ea7be1c094f80310c9fb256a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58933033c90c6cf4541b9a61fa9660c2') in 0.019035 seconds 
-  Import took 0.024175 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
+  Time since last request: 190.112216 seconds.
   path: Assets/Sources/Materials/Noelle/Furbelow.mat
   artifactKey: Guid(4ccf3760a68a3864d83dcc0c466c5faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Furbelow.mat using Guid(4ccf3760a68a3864d83dcc0c466c5faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddba1087f93a9ffc110e5084655e4109') in 0.015058 seconds 
-  Import took 0.020855 seconds .
+Start importing Assets/Sources/Materials/Noelle/Furbelow.mat using Guid(4ccf3760a68a3864d83dcc0c466c5faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05749278d64db0a894101609fff12959') in 0.136323 seconds 
+  Import took 0.144265 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000177 seconds.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Sources/Materials/Noelle/Skin.mat
+  artifactKey: Guid(13f0e9ea7be1c094f80310c9fb256a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Skin.mat using Guid(13f0e9ea7be1c094f80310c9fb256a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71af7cd2038fbbebedc0636ac1407c3e') in 0.051690 seconds 
+  Import took 0.059166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
   path: Assets/Sources/Materials/Noelle/LowerBody.mat
   artifactKey: Guid(95ff5e3701768d3408a7a67b2875feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/LowerBody.mat using Guid(95ff5e3701768d3408a7a67b2875feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8871a30e0eaa543a9c8d0985135279') in 0.016406 seconds 
-  Import took 0.021198 seconds .
+Start importing Assets/Sources/Materials/Noelle/LowerBody.mat using Guid(95ff5e3701768d3408a7a67b2875feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b6d5526d2b37df8a64ef8fcc4ec57b0') in 0.053662 seconds 
+  Import took 0.059454 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000177 seconds.
+  Time since last request: 537.883764 seconds.
+  path: Assets/Sources/Materials/Noelle/Cloth.mat
+  artifactKey: Guid(8edd4dd519ec41440a286774a6de9c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Cloth.mat using Guid(8edd4dd519ec41440a286774a6de9c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a37cf7189d9bc0c07e464ff865987aab') in 0.032157 seconds 
+  Import took 0.040713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Sources/Materials/Noelle/Shoulder.mat
+  artifactKey: Guid(208ec16aa532c7d4c9410beb33a82a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Shoulder.mat using Guid(208ec16aa532c7d4c9410beb33a82a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa32121968210a407bddf00dff08d473') in 0.028175 seconds 
+  Import took 0.035290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/Sources/Materials/Noelle/Hair.mat
+  artifactKey: Guid(403dc6be61d842d46b13f52b6ac006ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Hair.mat using Guid(403dc6be61d842d46b13f52b6ac006ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84e4977788b40cca3c2a2f5e4221e22') in 0.024472 seconds 
+  Import took 0.034061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Sources/Materials/Noelle/Skin.mat
+  artifactKey: Guid(13f0e9ea7be1c094f80310c9fb256a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Skin.mat using Guid(13f0e9ea7be1c094f80310c9fb256a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b07f2b758151da9c92562b99e8f51289') in 0.026909 seconds 
+  Import took 0.037424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Sources/Materials/Noelle/Furbelow.mat
+  artifactKey: Guid(4ccf3760a68a3864d83dcc0c466c5faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Furbelow.mat using Guid(4ccf3760a68a3864d83dcc0c466c5faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ef6b127fda56244158b36dda3be860') in 0.022456 seconds 
+  Import took 0.031780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Sources/Materials/Noelle/LowerBody.mat
+  artifactKey: Guid(95ff5e3701768d3408a7a67b2875feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/LowerBody.mat using Guid(95ff5e3701768d3408a7a67b2875feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7347f90866623bc301d37c72ece3944e') in 0.024071 seconds 
+  Import took 0.032709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
   path: Assets/Sources/Materials/Noelle/Face.mat
   artifactKey: Guid(48894037a2557b548bf6b8c65c1ddca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Face.mat using Guid(48894037a2557b548bf6b8c65c1ddca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fbd71edcdae540338122d295fbebc98') in 0.034923 seconds 
-  Import took 0.040344 seconds .
+Start importing Assets/Sources/Materials/Noelle/Face.mat using Guid(48894037a2557b548bf6b8c65c1ddca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817ab9a8342dfeaa3ccb2f65a24fc380') in 0.063657 seconds 
+  Import took 0.071146 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Sources/Materials/Noelle/Eye.mat
-  artifactKey: Guid(232835f2b2d53354a8eda05b3868426c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Eye.mat using Guid(232835f2b2d53354a8eda05b3868426c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98bd8d9a26fc800bc675ae095781897b') in 0.017504 seconds 
-  Import took 0.023164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
+  Time since last request: 0.000315 seconds.
   path: Assets/Sources/Materials/Noelle/Skirt.mat
   artifactKey: Guid(4e5785fc2c58abe4c92d19ccfd6fcff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Materials/Noelle/Skirt.mat using Guid(4e5785fc2c58abe4c92d19ccfd6fcff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '166582f9d1491603ca0bb0c93747dfe2') in 0.016281 seconds 
-  Import took 0.021068 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001735 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.935 seconds
-Domain Reload Profiling:
-	ReloadAssembly (936ms)
-		BeginReloadAssembly (109ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (777ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (280ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (256ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3023 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.5 MB.
-System memory in use after: 141.7 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3693.
-Total: 2.953200 ms (FindLiveObjects: 0.279900 ms CreateObjectMapping: 0.136200 ms MarkObjects: 2.519900 ms  DeleteObjects: 0.016500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 864.241149 seconds.
-  path: Assets/Settings/SampleSceneProfile.asset
-  artifactKey: Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/SampleSceneProfile.asset using Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef631f4052cd2b9f0a095309f31a7616') in 0.036695 seconds 
-  Import took 0.042363 seconds .
+Start importing Assets/Sources/Materials/Noelle/Skirt.mat using Guid(4e5785fc2c58abe4c92d19ccfd6fcff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '310a120e986618e2ea6bdeb6e7e1023f') in 0.028775 seconds 
+  Import took 0.037656 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 153.911176 seconds.
-  path: Assets/Settings/UniversalRP-HighQuality.asset
-  artifactKey: Guid(19ba41d7c0026c3459d37c2fe90c55a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/UniversalRP-HighQuality.asset using Guid(19ba41d7c0026c3459d37c2fe90c55a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ab1207c5c688999cd38aee4c5925a2') in 0.005376 seconds 
-  Import took 0.010386 seconds .
+  Time since last request: 203.598523 seconds.
+  path: Assets/Sources/Materials/Noelle/LowerBody.mat
+  artifactKey: Guid(95ff5e3701768d3408a7a67b2875feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/LowerBody.mat using Guid(95ff5e3701768d3408a7a67b2875feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7e31535a78d275a00ca5130bf9eecc') in 0.032527 seconds 
+  Import took 0.040193 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 101.586816 seconds.
-  path: Assets/Settings/SampleSceneProfile.asset
-  artifactKey: Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/SampleSceneProfile.asset using Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f1edbcbd57f7b3d7effce9c9afd2a41') in 0.002629 seconds 
-  Import took 0.007457 seconds .
+  Time since last request: 1923.586265 seconds.
+  path: Assets/Sources/Materials/Noelle/Cloth.mat
+  artifactKey: Guid(8edd4dd519ec41440a286774a6de9c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Cloth.mat using Guid(8edd4dd519ec41440a286774a6de9c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2d8ec75c1cd8cb785687312378dde4d') in 0.131719 seconds 
+  Import took 0.139873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Sources/Materials/Noelle/Shoulder.mat
+  artifactKey: Guid(208ec16aa532c7d4c9410beb33a82a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Shoulder.mat using Guid(208ec16aa532c7d4c9410beb33a82a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55c385ec26247a119a8f68da95c5a52') in 0.089476 seconds 
+  Import took 0.095911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Sources/Materials/Noelle/Hair.mat
+  artifactKey: Guid(403dc6be61d842d46b13f52b6ac006ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Hair.mat using Guid(403dc6be61d842d46b13f52b6ac006ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf4e5c3fcb655398a8b45b1b5e80eb3') in 0.027372 seconds 
+  Import took 0.075886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Sources/Materials/Noelle/Skin.mat
+  artifactKey: Guid(13f0e9ea7be1c094f80310c9fb256a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Skin.mat using Guid(13f0e9ea7be1c094f80310c9fb256a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640885f8d74018a2bfbd3efcf65d3375') in 0.025062 seconds 
+  Import took 0.034098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Sources/Materials/Noelle/Furbelow.mat
+  artifactKey: Guid(4ccf3760a68a3864d83dcc0c466c5faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Furbelow.mat using Guid(4ccf3760a68a3864d83dcc0c466c5faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481b3ccad7c38957c05e94247ac56022') in 0.073390 seconds 
+  Import took 0.081786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Sources/Materials/Noelle/LowerBody.mat
+  artifactKey: Guid(95ff5e3701768d3408a7a67b2875feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/LowerBody.mat using Guid(95ff5e3701768d3408a7a67b2875feca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327181269eb5680e891a4650d6b31f76') in 0.026073 seconds 
+  Import took 0.034740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/Sources/Materials/Noelle/Face.mat
+  artifactKey: Guid(48894037a2557b548bf6b8c65c1ddca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Face.mat using Guid(48894037a2557b548bf6b8c65c1ddca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c1ce6bb2d8a895c5eab5e254cb4771') in 0.034209 seconds 
+  Import took 0.041176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Sources/Materials/Noelle/Skirt.mat
+  artifactKey: Guid(4e5785fc2c58abe4c92d19ccfd6fcff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sources/Materials/Noelle/Skirt.mat using Guid(4e5785fc2c58abe4c92d19ccfd6fcff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003f49a73c53061c93e82c96030494a0') in 0.028124 seconds 
+  Import took 0.035089 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

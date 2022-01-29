@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: EyeWhite
   m_Shader: {fileID: 4800000, guid: 0478e2a2586ee4d4b86f88b5f47d490b, type: 3}
-  m_ShaderKeywords: _FACE
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -112,12 +112,15 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _Gloss: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _LerpMax: 0.013
     - _Metallic: 0
     - _OcclusionStrength: 1
+    - _OutlineBias: 0
+    - _OutlineOffset: 0
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _RampRange: 0

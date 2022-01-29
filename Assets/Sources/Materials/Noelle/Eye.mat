@@ -119,6 +119,8 @@ Material:
     - _LerpMax: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
+    - _OutlineBias: 0
+    - _OutlineOffset: 0
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _RampRange: 0

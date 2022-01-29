@@ -20,6 +20,8 @@ half _RampRange;
 
 half4 _ShadowColor;
 
+half _OutlineOffset;
+half _OutlineBias;
 
 #if defined(_DETAIL_MULX2) || defined(_DETAIL_SCALED)
 #define _DETAIL

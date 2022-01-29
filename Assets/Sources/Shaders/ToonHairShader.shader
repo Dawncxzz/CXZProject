@@ -14,6 +14,8 @@ Shader "Toon/ToonHairShader"
         _LerpMax ("_LerpMax", Range(0,1)) = 0
         _RampMap ("_RampMap", 2D) = "white" {}
         _RampRange ("_RampRange", Range(0, 1)) = 0
+        _OutlineOffset ("_OutlineOffset", Range(0, 1)) = 0
+        _OutlineBias ("_OutlineBias", Range(0, 1)) = 0
         
 
         // Specular vs Metallic workflow
@@ -91,11 +93,17 @@ Shader "Toon/ToonHairShader"
         // material work with both Universal Render Pipeline and Builtin Unity Pipeline
         Tags{"RenderType" = "Opaque" "RenderPipeline" = "UniversalPipeline" "UniversalMaterialType" = "Lit" "IgnoreProjector" = "True" "ShaderModel"="2.0"}
         LOD 300
-
         // ------------------------------------------------------------------
         //  Forward pass. Shades all light in a single pass. GI + emission + Fog
         Pass
         {
+            Stencil
+            {
+                Ref 1
+                Comp Always
+                Pass Replace
+                ZFail Replace
+            }
             // Lightmode matches the ShaderPassName set in UniversalRenderPipeline.cs. SRPDefaultUnlit and passes with
             // no LightMode tag are also rendered by Universal Render Pipeline
             Name "ForwardLit"
@@ -155,6 +163,31 @@ Shader "Toon/ToonHairShader"
             #define REQUIRES_WORLD_SPACE_TANGENT_INTERPOLATOR
             #include "Assets/Sources/ShaderLibrary/ToonShaderInput.hlsl"
             #include "Assets/Sources/ShaderLibrary/ToonShaderForwardPass.hlsl"
+            ENDHLSL
+        }
+
+        Pass
+        {
+
+            //ZTest Greater
+            //ZWrite Off
+            Cull Off
+            //Blend DstAlpha OneMinusDstAlpha
+            Stencil
+            {
+                Ref 1
+                Comp NotEqual
+            }
+            Name "Outline"
+
+
+            HLSLPROGRAM
+            #include "Assets/Sources/ShaderLibrary/ToonShaderInput.hlsl"
+            #include "Assets/Sources/ShaderLibrary/ToonShaderOutline.hlsl"
+
+            #pragma vertex OutlinePassVertex
+            #pragma geometry geom
+            #pragma fragment OutlinePassFragment
             ENDHLSL
         }
 

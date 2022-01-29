@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e00ac856-ef48-6bb9-b41e-e6eb44e54808": {
+      "ProjectGuid": "e00ac856-ef48-6bb9-b41e-e6eb44e54808",
+      "DisplayName": "UnityEngine.UI",
+      "ColorIndex": 0
+    },
+    "bc13f0dd-756b-365d-996e-4ee272254f99": {
+      "ProjectGuid": "bc13f0dd-756b-365d-996e-4ee272254f99",
+      "DisplayName": "Assembly-CSharp",
+      "ColorIndex": 1
+    },
+    "ba68d62b-00eb-f984-4bc1-7f97b3e281fc": {
+      "ProjectGuid": "ba68d62b-00eb-f984-4bc1-7f97b3e281fc",
+      "DisplayName": "Unity.RenderPipelines.Universal.Shaders",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
+    },
+    "c0f4d85f-7ab3-ddde-b75f-c6893e55bcd0": {
+      "ProjectGuid": "c0f4d85f-7ab3-ddde-b75f-c6893e55bcd0",
+      "DisplayName": "Unity.RenderPipelines.Universal.Editor",
+      "ColorIndex": 3
+    },
+    "4c22ac11-84f8-0c8b-2b35-d349f6d6e5ef": {
+      "ProjectGuid": "4c22ac11-84f8-0c8b-2b35-d349f6d6e5ef",
+      "DisplayName": "Unity.RenderPipelines.Universal.Runtime",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
