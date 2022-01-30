@@ -22,6 +22,7 @@ half4 _ShadowColor;
 
 half _OutlineOffset;
 half _OutlineBias;
+half4 _OutlineColor;
 
 #if defined(_DETAIL_MULX2) || defined(_DETAIL_SCALED)
 #define _DETAIL

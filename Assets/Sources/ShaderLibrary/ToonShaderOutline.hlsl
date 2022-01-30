@@ -49,7 +49,9 @@ v2gf Offset(v2gf o)
   float2 vOffset = mul(UNITY_MATRIX_P, float4(vNormal.xy, 0, 1));
   vOffset.xy = normalize(vOffset.xy);
   extruded.pos = TransformObjectToHClip(o.g_vertex);
-  extruded.pos.xy += vOffset.xy  * _OutlineOffset * o.v_color.xy * 0.01;
+  //extruded.pos.xy += vOffset.xy  * _OutlineOffset * o.v_color.xy * 0.01;
+  extruded.pos.xy += vOffset.xy  * _OutlineOffset * o.v_color.xy * 0.01 * extruded.pos.w;
+  extruded.pos.z -= _OutlineBias * 0.002;
   return extruded;
 }
 
@@ -89,9 +91,11 @@ v2gf Offset(v2gf o)
   APPEND(inputTriangle[0]);
 }
 
-half4 OutlinePassFragment(v2gf o) : SV_Target
+half4 OutlinePassFragment(v2gf input) : SV_Target
 {
-  	return 0;
+    Light mainLight = GetMainLight();
+    half lambert = saturate(dot(mainLight.direction, mul(input.g_normal, UNITY_MATRIX_I_M)));
+  	return half4(lambert * mainLight.color * mainLight.shadowAttenuation * mainLight.distanceAttenuation * _OutlineColor, 1);
 }
 
 #endif

@@ -30,7 +30,12 @@
       "ProjectGuid": "4c22ac11-84f8-0c8b-2b35-d349f6d6e5ef",
       "DisplayName": "Unity.RenderPipelines.Universal.Runtime",
       "ColorIndex": 4
+    },
+    "95f7e435-b7a7-a2e0-c024-fad8617be5fa": {
+      "ProjectGuid": "95f7e435-b7a7-a2e0-c024-fad8617be5fa",
+      "DisplayName": "Unity.RenderPipelines.Core.ShaderLibrary",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }

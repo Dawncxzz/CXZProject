@@ -12,8 +12,9 @@ Shader "Toon/ToonClothShader"
         _RampMap ("_RampMap", 2D) = "white" {}
         _RampRange ("_RampRange", Range(0, 1)) = 0
         _ShadowColor ("_ShadowColor", Color) = (1,1,1,1)
-        _OutlineOffset ("_OutlineOffset", Range(0, 1)) = 0
+        _OutlineOffset ("_OutlineOffset", Range(0, 5)) = 0
         _OutlineBias ("_OutlineBias", Range(0, 1)) = 0
+        [HDR]_OutlineColor ("_OutlineColor", Color) = (1,1,1,1)
 
 
         // Specular vs Metallic workflow
@@ -97,12 +98,12 @@ Shader "Toon/ToonClothShader"
         Pass
         {
 
-            Stencil
-            {
-                Ref 1
-                Comp Always
-                Pass Replace
-            }
+            //Stencil
+            //{
+            //    Ref 1
+            //    Comp Always
+            //    Pass Replace
+            //}
             // Lightmode matches the ShaderPassName set in UniversalRenderPipeline.cs. SRPDefaultUnlit and passes with
             // no LightMode tag are also rendered by Universal Render Pipeline
             Name "ForwardLit"
@@ -137,6 +138,7 @@ Shader "Toon/ToonClothShader"
             #pragma shader_feature_local_fragment _SPECULAR_SETUP
             #pragma shader_feature_local _RECEIVE_SHADOWS_OFF
             #pragma shader_feature _SKIN
+            #pragma shader_feature _MATCAP
 
 
             // -------------------------------------
@@ -166,19 +168,20 @@ Shader "Toon/ToonClothShader"
 
         Pass
         {
+            Offset 1, 1
             //ZTest Greater
             //ZWrite Off
-            Cull Off
-            ////Blend DstAlpha OneMinusDstAlpha
-            Stencil
-            {
-                Ref 1
-                Comp NotEqual
-            }
+            Cull [_Cull]
+            //Blend DstAlpha OneMinusDstAlpha
+            //Stencil
+            //{
+            //    Ref 1
+            //    Comp NotEqual
+            //    Fail Zero
+            //}
 
             Name "Outline" 
             
-
             HLSLPROGRAM
             #include "Assets/Sources/ShaderLibrary/ToonShaderInput.hlsl"
             #include "Assets/Sources/ShaderLibrary/ToonShaderOutline.hlsl"

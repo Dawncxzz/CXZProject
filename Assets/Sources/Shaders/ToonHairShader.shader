@@ -14,8 +14,9 @@ Shader "Toon/ToonHairShader"
         _LerpMax ("_LerpMax", Range(0,1)) = 0
         _RampMap ("_RampMap", 2D) = "white" {}
         _RampRange ("_RampRange", Range(0, 1)) = 0
-        _OutlineOffset ("_OutlineOffset", Range(0, 1)) = 0
+        _OutlineOffset ("_OutlineOffset", Range(0, 5)) = 0
         _OutlineBias ("_OutlineBias", Range(0, 1)) = 0
+        [HDR]_OutlineColor ("_OutlineColor", Color) = (1,1,1,1)
         
 
         // Specular vs Metallic workflow
@@ -97,13 +98,12 @@ Shader "Toon/ToonHairShader"
         //  Forward pass. Shades all light in a single pass. GI + emission + Fog
         Pass
         {
-            Stencil
-            {
-                Ref 1
-                Comp Always
-                Pass Replace
-                ZFail Replace
-            }
+            //Stencil
+            //{
+            //    Ref 1
+            //    Comp Always
+            //    Pass Replace
+            //}
             // Lightmode matches the ShaderPassName set in UniversalRenderPipeline.cs. SRPDefaultUnlit and passes with
             // no LightMode tag are also rendered by Universal Render Pipeline
             Name "ForwardLit"
@@ -138,6 +138,8 @@ Shader "Toon/ToonHairShader"
             #pragma shader_feature_local_fragment _SPECULAR_SETUP
             #pragma shader_feature_local _RECEIVE_SHADOWS_OFF
             #pragma shader_feature _FACE
+            #pragma shader_feature _MATCAP
+            #pragma shader_feature _ANISOTROPY
 
             // -------------------------------------
             // Universal Pipeline keywords
@@ -168,16 +170,17 @@ Shader "Toon/ToonHairShader"
 
         Pass
         {
-
+            Offset 1, 1
             //ZTest Greater
             //ZWrite Off
-            Cull Off
+            Cull [_Cull]
             //Blend DstAlpha OneMinusDstAlpha
-            Stencil
-            {
-                Ref 1
-                Comp NotEqual
-            }
+            //Stencil
+            //{
+            //    Ref 1
+            //    Comp NotEqual
+            //    Fail Zero
+            //}
             Name "Outline"
 
 
@@ -199,7 +202,7 @@ Shader "Toon/ToonHairShader"
             ZWrite On
             ZTest LEqual
             ColorMask 0
-            Cull[_Cull]
+            Cull Back
 
             HLSLPROGRAM
             #pragma only_renderers gles gles3 glcore d3d11

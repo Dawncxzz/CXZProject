@@ -117,7 +117,7 @@ half4 Toon_Face(Light mainlight, half ndotl, half4 albedo, half lightmap, Varyin
 {
 
     //向量准备
-    half3 front = mul(UNITY_MATRIX_M, half3(0,0,1));
+    half3 front = mul(UNITY_MATRIX_M, half3(0,-1,0));
     half3 right = mul(UNITY_MATRIX_M, half3(1,0,0));
     half ldotx = dot(right, mainlight.direction);
     half ldotZ = dot(front, mainlight.direction);
@@ -146,14 +146,14 @@ half4 Toon_Face(Light mainlight, half ndotl, half4 albedo, half lightmap, Varyin
 half4 Toon_Specular(Light mainlight, Varyings input, half specular, half gloss)
 {
     //向量准备
-    //half3 rDir = reflect(-mainlight.direction, input.normalWS);
-    //half3 halfDir = SafeNormalize(rDir + input.viewDirWS);
-    half3 halfDir = SafeNormalize(mainlight.direction + normalize(input.viewDirWS));
+    half3 rDir = reflect(-mainlight.direction, input.normalWS);
+    half3 halfDir = SafeNormalize(rDir + normalize(-input.viewDirWS));
+    //half3 halfDir = SafeNormalize(mainlight.direction + normalize(input.viewDirWS));
     half ndoth = saturate(dot(input.normalWS, halfDir));
     half ldoth = saturate(dot(mainlight.direction, halfDir));
 
     //Unity内置BRDF高光计算
-    half roughness = 1 - gloss * _Gloss;
+    half roughness = gloss * _Gloss;
     half roughness2 = roughness * roughness;
     half roughness2MinusOne = 1 - roughness * roughness;
     half normalizationTerm = roughness * 4.0 + 2.0;
@@ -164,14 +164,31 @@ half4 Toon_Specular(Light mainlight, Varyings input, half specular, half gloss)
 
     //BlinnPhong计算
     //half specularTerm = pow(ndoth, gloss * _Gloss);
-    return specularTerm * _SpecularColor * specular * float4(mainlight.color, 1);
+
+    //金属球计算
+    #if _MATCAP
+        float3 viewNormal = mul(UNITY_MATRIX_V, input.normalWS);
+        float3 viewPos = -mul(UNITY_MATRIX_V, input.viewDirWS);
+        float3 vTangent = normalize( cross(-viewPos,float3(0,1,0)));
+        float3 vBinormal  = cross(viewPos, vTangent);
+        float2 matCapUV = float2(dot(vTangent, viewNormal), dot(vBinormal, viewNormal)) * 0.495 + 0.5;
+        half metal = SAMPLE_TEXTURE2D(_MetalMap, sampler_MetalMap, matCapUV);
+    #else
+        half metal = 0;
+    #endif
+
+    //NPR高光偷偷乘个albedo没问题吧
+    half4 albedo = SAMPLE_TEXTURE2D(_DiffuseMap, sampler_DiffuseMap, input.uv.xy);
+
+    return float4((specularTerm * _SpecularColor.rgb * (specular + metal) * mainlight.color) * albedo, 1);
 }
 
-
-
-half4 Toon_Anisotropy()
+half3 Toon_Anisotropy(Light mainlight, Varyings input, half specular)
 {
-    
+    half3 T = input.tangentWS;
+    half3 rDir = reflect(-mainlight.direction, input.normalWS);
+    half3 H = SafeNormalize(rDir + input.viewDirWS);
+    return D_KajiyaKay(T, H, specular);
 }
 
 half4 Toon_Outline(Attributes input, float4 positionCS)
@@ -284,7 +301,6 @@ half4 ToonHairPassFragment(Varyings input) : SV_Target
     half ndotl = saturate(dot(inputData.normalWS, mainLight.direction));
 
     half4 albedo = SAMPLE_TEXTURE2D(_DiffuseMap, sampler_DiffuseMap, input.uv.xy);
-    half metal = SAMPLE_TEXTURE2D(_MetalMap, sampler_MetalMap, input.uv.xy);
     half faceShadow = SAMPLE_TEXTURE2D(_FaceShadowMap, sampler_FaceShadowMap, input.uv.xy);
     half4 mask = SAMPLE_TEXTURE2D(_MaskMap, sampler_MaskMap, input.uv.xy);
 
@@ -295,10 +311,13 @@ half4 ToonHairPassFragment(Varyings input) : SV_Target
         half4 diffuse = Toon_Diffuse(mainLight, ndotl, albedo, mask.b);
         half4 specular = Toon_Specular(mainLight, input, mask.g, mask.r);
     #endif
+    #if _ANISOTROPY
+        specular.rgb += Toon_Anisotropy(mainLight, input, mask.g);
+    #endif
 
-    
+    half3 col = (diffuse + specular).rgb;
+    return half4(col, 1);
 
-    return diffuse + specular;
     half4 color = UniversalFragmentPBR(inputData, surfaceData);
 
     color.rgb = MixFog(color.rgb, inputData.fogCoord);
@@ -403,7 +422,9 @@ half4 ToonClothPassFragment(Varyings input) : SV_Target
     half4 diffuse = Toon_Diffuse(mainLight, ndotl, albedo, mask.b);
     half4 specular = Toon_Specular(mainLight, input, mask.g, mask.r);
 
-    return diffuse + specular;
+    half3 col = (diffuse + specular).rgb ;
+
+    return half4(col, 1);
 
     
     half4 color = UniversalFragmentPBR(inputData, surfaceData);
@@ -473,6 +494,7 @@ Varyings OutlinePassVertex(Attributes input)
 //法线外扩和中心坐标外扩的片元着色器
 half4 OutlinePassFragment(Varyings input) : SV_Target
 {
+
     return 0;
 }
 

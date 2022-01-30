@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Rendering;
 
+#if UNITY_EDITOR
 namespace UnityEditor.Rendering.Universal.ShaderGUI
 {
     internal class ToonClothShader : BaseShaderGUI
@@ -22,6 +23,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
         MaterialProperty _ShadowColor = null;
         MaterialProperty _OutlineOffset = null;
         MaterialProperty _OutlineBias = null;
+        MaterialProperty _OutlineColor = null;
 
         public override void OnOpenGUI(Material material, MaterialEditor materialEditor)
         {
@@ -58,6 +60,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
             _ShadowColor = FindProperty("_ShadowColor", properties);
             _OutlineOffset = FindProperty("_OutlineOffset", properties);
             _OutlineBias = FindProperty("_OutlineBias", properties);
+            _OutlineColor = FindProperty("_OutlineColor", properties);
 
         }
 
@@ -102,22 +105,30 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
 
             EditorGUI.BeginChangeCheck();
             _SKIN = EditorGUILayout.Toggle("皮肤", _SKIN);
-
+            bool _MATCAP = material.IsKeywordEnabled("_MATCAP");
+            _MATCAP = EditorGUILayout.Toggle("matcap", _MATCAP);
+            if (_MATCAP)
+            {
+                EditorGUI.indentLevel++;
+                materialEditor.TexturePropertySingleLine(new GUIContent("matcap贴图"), _MetalMap);
+                EditorGUI.indentLevel--;
+            }
             materialEditor.TexturePropertySingleLine(new GUIContent("漫反射贴图"), _DiffuseMap, _DiffuseColor);
             materialEditor.ShaderProperty(_SpecularColor, "高光颜色");
             EditorGUILayout.LabelField("遮罩详情:(R:光滑度 G:高光  B:漫反射 A:渐变)");
             materialEditor.TexturePropertySingleLine(new GUIContent("遮罩图"), _MaskMap);
             materialEditor.ShaderProperty(_Gloss, "光滑度");
-            materialEditor.TexturePropertySingleLine(new GUIContent("金属贴图"), _MetalMap);
             materialEditor.TexturePropertySingleLine(new GUIContent("渐变贴图"), _RampMap);
             materialEditor.ShaderProperty(_RampRange, "渐变范围");
             materialEditor.ShaderProperty(_ShadowColor, "阴影颜色");
             materialEditor.ShaderProperty(_OutlineOffset, "描边宽度");
             materialEditor.ShaderProperty(_OutlineBias, "描边深度");
+            materialEditor.ShaderProperty(_OutlineColor, "描边颜色");
 
             if (EditorGUI.EndChangeCheck())
             {
                 CoreUtils.SetKeyword(material, "_SKIN", _SKIN);
+                CoreUtils.SetKeyword(material, "_MATCAP", _MATCAP);
             }
 
             DrawEmissionProperties(material, true);
@@ -197,3 +208,4 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
         }
     }
 }
+#endif

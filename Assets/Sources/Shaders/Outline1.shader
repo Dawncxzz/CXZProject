@@ -40,7 +40,8 @@ Shader "Custom/Unlit/CustomSilhouette1"
   	    float2 vOffset = mul(UNITY_MATRIX_P, float4(vNormal.xy, 0, 1));
   	    vOffset.xy = normalize(vOffset.xy);
   	    extruded.pos = TransformObjectToHClip(o.g_vertex);
-  	    extruded.pos.xy += vOffset.xy * extruded.pos.w * _OutlineWidth;
+  	    //extruded.pos.xy += vOffset.xy * extruded.pos.w * _OutlineWidth;
+  	    extruded.pos.xy += vOffset.xy * _OutlineWidth;
   	    return extruded;
     }
       
@@ -71,6 +72,7 @@ Shader "Custom/Unlit/CustomSilhouette1"
     }	
      
     half4 frag(v2gf o) : SV_Target{
+        
   	    return _OutlineColor;
     }
     ENDHLSL
@@ -87,7 +89,7 @@ Shader "Custom/Unlit/CustomSilhouette1"
    	        ZWrite On
             Stencil//模板测试中参考值不等于1的像素将会通过，进行外轮廓描边。
             {
-   	            Ref 1
+   	            Ref 1 
     	        Comp notequal
     	        Pass keep
     	        Fail keep
