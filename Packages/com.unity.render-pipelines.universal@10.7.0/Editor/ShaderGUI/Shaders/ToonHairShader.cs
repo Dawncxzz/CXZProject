@@ -25,7 +25,9 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
         MaterialProperty _LerpMax = null;
         MaterialProperty _OutlineOffset = null;
         MaterialProperty _OutlineBias = null;
-        MaterialProperty _OutlineColor = null;
+        MaterialProperty _OutlineColor = null; 
+        MaterialProperty _RimColor = null; 
+        MaterialProperty _RimOffset = null; 
 
         public override void OnOpenGUI(Material material, MaterialEditor materialEditor)
         {
@@ -65,6 +67,8 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
             _OutlineOffset = FindProperty("_OutlineOffset", properties);
             _OutlineBias = FindProperty("_OutlineBias", properties);
             _OutlineColor = FindProperty("_OutlineColor", properties);
+            _RimColor = FindProperty("_RimColor", properties);
+            _RimOffset = FindProperty("_RimOffset", properties);
 
         }
 
@@ -125,6 +129,15 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
             }
             bool _ANISOTROPY = material.IsKeywordEnabled("_ANISOTROPY");
             _ANISOTROPY = EditorGUILayout.Toggle("各向异性", _ANISOTROPY);
+            bool _SCREENSPACERIM = material.IsKeywordEnabled("_SCREENSPACERIM");
+            _SCREENSPACERIM = EditorGUILayout.Toggle("屏幕边缘光", _SCREENSPACERIM);
+            if (_SCREENSPACERIM)
+            {
+                EditorGUI.indentLevel++;
+                materialEditor.ShaderProperty(_RimColor, "边缘颜色");
+                materialEditor.ShaderProperty(_RimOffset, "边缘偏移");
+                EditorGUI.indentLevel--;
+            }
             materialEditor.TexturePropertySingleLine(new GUIContent("漫反射贴图"), _DiffuseMap, _DiffuseColor);
             materialEditor.ShaderProperty(_SpecularColor, "高光颜色"); 
             EditorGUILayout.LabelField("遮罩详情:(R:光滑度 G:高光  B:漫反射 A:渐变)");
@@ -143,6 +156,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
                 CoreUtils.SetKeyword(material, "_FACE", _FACE);
                 CoreUtils.SetKeyword(material, "_MATCAP", _MATCAP);
                 CoreUtils.SetKeyword(material, "_ANISOTROPY", _ANISOTROPY);
+                CoreUtils.SetKeyword(material, "_SCREENSPACERIM", _SCREENSPACERIM);
             }
         }
 

@@ -13,8 +13,10 @@ Shader "Toon/ToonClothShader"
         _RampRange ("_RampRange", Range(0, 1)) = 0
         _ShadowColor ("_ShadowColor", Color) = (1,1,1,1)
         _OutlineOffset ("_OutlineOffset", Range(0, 5)) = 0
-        _OutlineBias ("_OutlineBias", Range(0, 1)) = 0
+        _OutlineBias ("_OutlineBias", Range(0, 5)) = 0
         [HDR]_OutlineColor ("_OutlineColor", Color) = (1,1,1,1)
+        [HDR]_RimColor ("_RimColor", Color) = (1,1,1,1)
+        _RimOffset ("_RimOffset", Range(0, 5)) = 1
 
 
         // Specular vs Metallic workflow
@@ -139,6 +141,7 @@ Shader "Toon/ToonClothShader"
             #pragma shader_feature_local _RECEIVE_SHADOWS_OFF
             #pragma shader_feature _SKIN
             #pragma shader_feature _MATCAP
+            #pragma shader_feature _SCREENSPACERIM
 
 
             // -------------------------------------

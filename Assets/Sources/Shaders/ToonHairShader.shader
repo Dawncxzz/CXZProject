@@ -15,9 +15,10 @@ Shader "Toon/ToonHairShader"
         _RampMap ("_RampMap", 2D) = "white" {}
         _RampRange ("_RampRange", Range(0, 1)) = 0
         _OutlineOffset ("_OutlineOffset", Range(0, 5)) = 0
-        _OutlineBias ("_OutlineBias", Range(0, 1)) = 0
+        _OutlineBias ("_OutlineBias", Range(0, 5)) = 0
         [HDR]_OutlineColor ("_OutlineColor", Color) = (1,1,1,1)
-        
+        [HDR]_RimColor ("_RimColor", Color) = (1,1,1,1)
+        _RimOffset ("_RimOffset", Range(0, 5)) = 1
 
         // Specular vs Metallic workflow
         [HideInInspector] _WorkflowMode("WorkflowMode", Float) = 1.0
@@ -140,6 +141,7 @@ Shader "Toon/ToonHairShader"
             #pragma shader_feature _FACE
             #pragma shader_feature _MATCAP
             #pragma shader_feature _ANISOTROPY
+            #pragma shader_feature _SCREENSPACERIM
 
             // -------------------------------------
             // Universal Pipeline keywords

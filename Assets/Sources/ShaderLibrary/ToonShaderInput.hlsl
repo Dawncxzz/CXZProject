@@ -6,27 +6,7 @@
 #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/SurfaceInput.hlsl"
 #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/ParallaxMapping.hlsl"
 
-TEXTURE2D(_DiffuseMap); SAMPLER(sampler_DiffuseMap);
-half4 _DiffuseColor;
-half4 _SpecularColor;
-half _Gloss;
 
-TEXTURE2D(_MaskMap); SAMPLER(sampler_MaskMap);
-TEXTURE2D(_MetalMap); SAMPLER(sampler_MetalMap);
-TEXTURE2D(_FaceShadowMap); SAMPLER(sampler_FaceShadowMap);
-half _LerpMax;
-TEXTURE2D(_RampMap); SAMPLER(sampler_RampMap);
-half _RampRange;
-
-half4 _ShadowColor;
-
-half _OutlineOffset;
-half _OutlineBias;
-half4 _OutlineColor;
-
-#if defined(_DETAIL_MULX2) || defined(_DETAIL_SCALED)
-#define _DETAIL
-#endif
 
 // NOTE: Do not ifdef the properties here as SRP batcher can not handle different layouts.
 CBUFFER_START(UnityPerMaterial)
@@ -46,6 +26,31 @@ half _ClearCoatSmoothness;
 half _DetailAlbedoMapScale;
 half _DetailNormalMapScale;
 half _Surface;
+#if defined(_DETAIL_MULX2) || defined(_DETAIL_SCALED)
+#define _DETAIL
+#endif
+
+TEXTURE2D(_DiffuseMap); SAMPLER(sampler_DiffuseMap);
+half4 _DiffuseColor;
+half4 _SpecularColor;
+half _Gloss;
+
+TEXTURE2D(_MaskMap); SAMPLER(sampler_MaskMap);
+TEXTURE2D(_MetalMap); SAMPLER(sampler_MetalMap);
+TEXTURE2D(_FaceShadowMap); SAMPLER(sampler_FaceShadowMap);
+half _LerpMax;
+TEXTURE2D(_RampMap); SAMPLER(sampler_RampMap);
+half _RampRange;
+
+half4 _ShadowColor;
+
+half _OutlineOffset;
+half _OutlineBias;
+half4 _OutlineColor;
+half4 _RimColor;
+half _RimOffset;
+
+TEXTURE2D(_CameraDepthTexture); SAMPLER(sampler_CameraDepthTexture);
 CBUFFER_END
 
 // NOTE: Do not ifdef the properties for dots instancing, but ifdef the actual usage.

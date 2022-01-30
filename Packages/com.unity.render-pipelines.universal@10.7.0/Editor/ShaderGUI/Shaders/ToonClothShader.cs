@@ -24,6 +24,8 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
         MaterialProperty _OutlineOffset = null;
         MaterialProperty _OutlineBias = null;
         MaterialProperty _OutlineColor = null;
+        MaterialProperty _RimColor = null;
+        MaterialProperty _RimOffset = null;
 
         public override void OnOpenGUI(Material material, MaterialEditor materialEditor)
         {
@@ -61,6 +63,8 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
             _OutlineOffset = FindProperty("_OutlineOffset", properties);
             _OutlineBias = FindProperty("_OutlineBias", properties);
             _OutlineColor = FindProperty("_OutlineColor", properties);
+            _RimColor = FindProperty("_RimColor", properties);
+            _RimOffset = FindProperty("_RimOffset", properties);
 
         }
 
@@ -113,6 +117,15 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
                 materialEditor.TexturePropertySingleLine(new GUIContent("matcapÌùÍ¼"), _MetalMap);
                 EditorGUI.indentLevel--;
             }
+            bool _SCREENSPACERIM = material.IsKeywordEnabled("_SCREENSPACERIM");
+            _SCREENSPACERIM = EditorGUILayout.Toggle("ÆÁÄ»±ßÔµ¹â", _SCREENSPACERIM);
+            if (_SCREENSPACERIM)
+            {
+                EditorGUI.indentLevel++;
+                materialEditor.ShaderProperty(_RimColor, "±ßÔµÑÕÉ«");
+                materialEditor.ShaderProperty(_RimOffset, "±ßÔµÆ«ÒÆ");
+                EditorGUI.indentLevel--;
+            }
             materialEditor.TexturePropertySingleLine(new GUIContent("Âþ·´ÉäÌùÍ¼"), _DiffuseMap, _DiffuseColor);
             materialEditor.ShaderProperty(_SpecularColor, "¸ß¹âÑÕÉ«");
             EditorGUILayout.LabelField("ÕÚÕÖÏêÇé:(R:¹â»¬¶È G:¸ß¹â  B:Âþ·´Éä A:½¥±ä)");
@@ -129,6 +142,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
             {
                 CoreUtils.SetKeyword(material, "_SKIN", _SKIN);
                 CoreUtils.SetKeyword(material, "_MATCAP", _MATCAP);
+                CoreUtils.SetKeyword(material, "_SCREENSPACERIM", _SCREENSPACERIM);
             }
 
             DrawEmissionProperties(material, true);
