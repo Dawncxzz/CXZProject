@@ -101,12 +101,12 @@ Shader "Toon/ToonClothShader"
         Pass
         {
 
-            //Stencil
-            //{
-            //    Ref 1
-            //    Comp Always
-            //    Pass Replace
-            //}
+            Stencil
+            {
+                Ref 1
+                Comp Always
+                Pass Replace
+            }
             // Lightmode matches the ShaderPassName set in UniversalRenderPipeline.cs. SRPDefaultUnlit and passes with
             // no LightMode tag are also rendered by Universal Render Pipeline
             Name "ForwardLit"
@@ -170,31 +170,31 @@ Shader "Toon/ToonClothShader"
             ENDHLSL
         }
 
-        Pass
-        {
-            Offset 1, 1
-            //ZTest Greater
-            //ZWrite Off
-            Cull [_Cull]
-            //Blend DstAlpha OneMinusDstAlpha
-            //Stencil
-            //{
-            //    Ref 1
-            //    Comp NotEqual
-            //    Fail Zero
-            //}
+        //Pass
+        //{
+        //    Offset 1, 1
+        //    //ZTest Greater
+        //    //ZWrite Off
+        //    Cull [_Cull]
+        //    //Blend DstAlpha OneMinusDstAlpha
+        //    //Stencil
+        //    //{
+        //    //    Ref 1
+        //    //    Comp NotEqual
+        //    //    Fail Zero
+        //    //}
 
-            Name "Outline" 
+        //    Name "Outline" 
             
-            HLSLPROGRAM
-            #include "Assets/Sources/ShaderLibrary/ToonShaderInput.hlsl"
-            #include "Assets/Sources/ShaderLibrary/ToonShaderOutline.hlsl"
+        //    HLSLPROGRAM
+        //    #include "Assets/Sources/ShaderLibrary/ToonShaderInput.hlsl"
+        //    #include "Assets/Sources/ShaderLibrary/ToonShaderOutline.hlsl"
 
-            #pragma vertex OutlinePassVertex
-            #pragma geometry geom
-            #pragma fragment OutlinePassFragment
-            ENDHLSL
-        }
+        //    #pragma vertex OutlinePassVertex
+        //    #pragma geometry geom
+        //    #pragma fragment OutlinePassFragment
+        //    ENDHLSL
+        //}
 
         Pass
         {

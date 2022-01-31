@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
   m_Name: Outline
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   settings:
     passTag: Outline
     Event: 300
@@ -64,7 +64,8 @@ MonoBehaviour:
       LayerMask:
         serializedVersion: 2
         m_Bits: 8
-      PassNames: []
+      PassNames:
+      - UniversalForward
     overrideMaterial: {fileID: 2100000, guid: d81e88b8111cddf438f65c472423baa1, type: 2}
     overrideMaterialPassIndex: 0
     overrideDepthState: 0

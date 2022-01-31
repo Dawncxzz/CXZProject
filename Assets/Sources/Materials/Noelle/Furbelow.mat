@@ -123,7 +123,7 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _OutlineBias: 1
-    - _OutlineOffset: 0.3
+    - _OutlineOffset: 0.4
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _RampRange: 0
