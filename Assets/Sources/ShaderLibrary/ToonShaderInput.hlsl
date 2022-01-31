@@ -49,6 +49,7 @@ half _OutlineBias;
 half4 _OutlineColor;
 half4 _RimColor;
 half _RimOffset;
+half _RimThreshold;
 
 TEXTURE2D(_CameraDepthTexture); SAMPLER(sampler_CameraDepthTexture);
 CBUFFER_END

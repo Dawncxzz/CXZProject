@@ -28,6 +28,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
         MaterialProperty _OutlineColor = null; 
         MaterialProperty _RimColor = null; 
         MaterialProperty _RimOffset = null; 
+        MaterialProperty _RimThreshold = null; 
 
         public override void OnOpenGUI(Material material, MaterialEditor materialEditor)
         {
@@ -69,6 +70,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
             _OutlineColor = FindProperty("_OutlineColor", properties);
             _RimColor = FindProperty("_RimColor", properties);
             _RimOffset = FindProperty("_RimOffset", properties);
+            _RimThreshold = FindProperty("_RimThreshold", properties);
 
         }
 
@@ -136,6 +138,7 @@ namespace UnityEditor.Rendering.Universal.ShaderGUI
                 EditorGUI.indentLevel++;
                 materialEditor.ShaderProperty(_RimColor, "±ßÔµÑÕÉ«");
                 materialEditor.ShaderProperty(_RimOffset, "±ßÔµÆ«ÒÆ");
+                materialEditor.ShaderProperty(_RimThreshold, "±ßÔµÉî¶ÈãÐÖµ");
                 EditorGUI.indentLevel--;
             }
             materialEditor.TexturePropertySingleLine(new GUIContent("Âþ·´ÉäÌùÍ¼"), _DiffuseMap, _DiffuseColor);

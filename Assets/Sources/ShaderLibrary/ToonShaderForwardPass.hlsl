@@ -206,15 +206,17 @@ half4 Toon_Outline(Attributes input, float4 positionCS)
 
 half4 Toon_Rim(Varyings input, Light mainlight)
 {
+    
     half3 screenOffset = mul(UNITY_MATRIX_V, -mainlight.direction);
     screenOffset.xy /= _ScreenParams.xy;
     screenOffset.xy = normalize(screenOffset.xy);
     half2 screenUV = input.positionCS.xy / _ScreenParams.xy;
     float depth0 = SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, sampler_CameraDepthTexture, screenUV - screenOffset.xy * 0.01 * _RimOffset);
     float depth1 = SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, sampler_CameraDepthTexture, screenUV);
-    
-    float rim = step(depth0 + 0.001, depth1);
-    return rim * _RimColor;
+    //float rim = step(depth0 + 0.01 * _RimThreshold, depth1);
+    float rim = Smootherstep(depth1, 0, depth0 + 0.01 * _RimThreshold);
+
+    return rim * _RimColor * half4(mainlight.color, 1) * mainlight.shadowAttenuation;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -327,7 +329,10 @@ half4 ToonHairPassFragment(Varyings input) : SV_Target
         specular.rgb += Toon_Anisotropy(mainLight, input, mask.g);
     #endif
 
-    half3 col = (diffuse + specular).rgb + Toon_Rim(input, mainLight);
+    half3 col = (diffuse + specular).rgb;
+    #if _SCREENSPACERIM
+        col += Toon_Rim(input, mainLight);
+    #endif
     return half4(col, 1);
 
     half4 color = UniversalFragmentPBR(inputData, surfaceData);
@@ -434,8 +439,10 @@ half4 ToonClothPassFragment(Varyings input) : SV_Target
     half4 diffuse = Toon_Diffuse(mainLight, ndotl, albedo, mask.b);
     half4 specular = Toon_Specular(mainLight, input, mask.g, mask.r);
 
-    half3 col = (diffuse + specular).rgb + Toon_Rim(input, mainLight);
-
+    half3 col = (diffuse + specular).rgb;
+    #if _SCREENSPACERIM
+        col += Toon_Rim(input, mainLight);
+    #endif
     return half4(col, 1);
 
     

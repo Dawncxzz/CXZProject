@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Hair
   m_Shader: {fileID: 4800000, guid: 0478e2a2586ee4d4b86f88b5f47d490b, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _SCREENSPACERIM
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -120,12 +120,13 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _OutlineBias: 1
-    - _OutlineOffset: 0.6
+    - _OutlineOffset: 0.3
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _RampRange: 0
     - _ReceiveShadows: 1
-    - _RimOffset: 1
+    - _RimOffset: 0.4
+    - _RimThreshold: 0.1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -142,5 +143,5 @@ Material:
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SpecularColor: {r: 2.9960785, g: 2.9960785, b: 2.9960785, a: 1}
+    - _SpecularColor: {r: 1.4980392, g: 1.4980392, b: 1.4980392, a: 1}
   m_BuildTextureStacks: []
